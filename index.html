@@ -1,14 +1,347 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head> <!--where basic parameters go, will probably not show on website--> 
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>Xinru Li</title>
     <style>
       /* css goes here */
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #707070
+      }
+      
+
+      /* formatting the navbar*/
+      .navbar{
+          overflow: auto;
+      }
+      .navbar a{
+          float: left;
+          color: #707070;
+          padding: 20px; 
+          font-size: larger;
+          font-weight: bold;
+          text-decoration: none
+      }
+      .navbar a:hover{
+          text-decoration: underline;
+          color: #546393
+      }
+
+
+
+      /* formatting the footer */
+      .footer{
+          text-align: center;
+          padding-top: 30px;
+          padding-bottom: 10px;
+          background: #546393;
+          color: #ffffff;
+      }
+      .footer a{
+          text-decoration: none;
+          color: #FFFFFF;
+          font-size:large;
+          border: 2px solid #FFFFFF;
+          border-radius: 25px; 
+          padding: 10px; 
+      }
+      .footer a:hover{
+          background: #FFFFFF;
+          color:#546393
+      }
+      .footer p{
+          padding: 10px;
+          font-size: small;
+      }
+
+      /* formatting intro photo + me*/
+      *{
+          box-sizing:border-box;
+      }
+      .container {
+          display: flex; 
+          flex-wrap: wrap;
+          text-decoration: none; 
+          outline: none;
+      }
+      .left{
+          flex: 30%;
+          padding: 20px;
+
+      }
+      .right{
+          flex: 70%;
+          padding: 20px;
+
+          
+      }
+      
+      .right h1{
+          animation: type 3s; 
+          overflow: hidden; 
+          white-space: nowrap; 
+
+      }
+      .right a{
+          text-decoration: none;
+      }
+      /*responsive layout*/
+      @media screen and (max-width: 600px){
+          .container {
+              flex-direction: column;
+          }
+          .filterDiv{
+              border-radius: 5px; 
+
+              width: 100%; 
+          }
+      }
+
+
+      /*
+      typing effect
+      */
+      @keyframes type {
+          0%{
+              width:0ch;
+          }
+          100%{
+              width: 16ch;
+          }
+      }
+
+
+      /*
+      projects
+      */
+      @keyframes slide{
+          0%{margin-left: -20px}
+          75%{margin-left: -20px}
+          100%{margin-left: 0px}
+        }
+      
+      .projects{
+        padding-left: 20px; 
+      }
+      .projects h1{
+        animation: slide 3s; 
+        overflow: hidden; 
+        white-space: nowrap; 
+      }
+
+      /*
+      filter system
+      */
+      .filtercontainer {
+          padding-left: 20px; 
+          overflow: hidden;
+        }
+      .filterDiv {
+          border-radius: 25px; 
+          width: 33%;
+          height: auto; 
+          text-align: center;
+          margin: 2px;
+          display: none; /* Hidden by default */
+          overflow: hidden;
+          float:left;
+          position: relative; 
+        }
+      .filterDiv div{/*hover layout*/
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          background: #546393;
+          color: white;
+          margin-bottom: 5px;
+          opacity: 0;
+          visibility: hidden;
+          -webkit-transition: visibility 0s, opacity 0.5s linear;
+          transition: visibility 0s, opacity 0.5s linear; 
+
+      }
+      .filterDiv:hover{
+          cursor: pointer;
+      }
+      .filterDiv:hover div{
+          width: 100%;
+          height: 100%;
+          padding: 8px 15px; 
+          visibility: visible;
+          opacity: 0.7;
+
+      }
+      /* The "show" class is added to the filtered elements */
+      .show {
+          display: block;
+        }
+      /* Style the buttons */
+      .btn {
+          outline: none;
+          padding: 12px;
+          background-color: #FFFFFF;
+          cursor: pointer;
+          text-decoration: none;
+          color: #546393;
+          border: 2px solid #546393;
+          line-height: 1px; 
+          border-radius: 15px; 
+          }
+      /* inverts color on mouse-over */
+      .btn:hover {
+          background-color: #546393;
+          color: #FFFFFF;
+          }
+      /* Add a dark background to the active button */
+      .btn.active {
+          background-color: #546393;
+          color: #FFFFFF;
+          }
+      #myBtnContainer{
+          padding-left: 20px;
+          padding-bottom: 20px; 
+      }
+
+
+
     </style>
+
+    
+
   </head>
-  <body>
-    <!-- HTML goes here -->
-    <div>Hello, world! beeep bop</div>
+
+  <body>  <!-- where contnet goes -->
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="#">HOME</a>
+        <a href="#">ABOUT</a>
+    </div>
+
+    <!-- Content in Header -->
+    <div class = "container">
+        <div class= "left">
+            <img src="IMG_0252.jpeg" alt="photo of me!" width = 100%>
+        </div>
+
+        <div class = "right">
+            <h1> Hello! I'm Xinru :) </h1>
+            <p>Welcome to my website! </p>
+            <p>I'm a computer science-economics and music student at Brown University. </p>
+            <p>I love art, startups, and learning new things. See some of my adventures below! </p>
+            <p>
+                <a href="https://www.linkedin.com/in/xinruli/"><img src = "Linkedin.png" alt="Linkedin" style="border:0px; margin:8px" width=30px> </a>
+                <a href="https://github.com/xinruviolas"><img src = "github.png" alt="Github" style="border:0px; margin:8px" width=30px> </a>
+                <a href="mailto:xinru_li@brown.edu"><img src = "gmail.png" alt="Email" style="border:0px; margin:8px" width=30px> </a>
+                <a href="mailto:xinru_li@brown.edu"><img src = "resume.png" alt="Resume" style="border:0px; margin:8px" width=30px> </a>
+                    <!-- don't forget to ctually have the resume on here -->
+
+            </p>
+        </div>
+    </div>
+
+    <!-- Projects -->
+    <div class = "projects">
+        <h1> My Projects!</h1>
+    </div>
+    <!-- filter schebang-->
+    <!-- Control buttons -->
+    <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn" onclick="filterSelection('Art')"> Art</button>
+        <button class="btn" onclick="filterSelection('Code')"> Code</button>
+        <button class="btn" onclick="filterSelection('Design')"> Design</button>
+        <button class="btn" onclick="filterSelection('Leadership')"> Leadership</button>
+    </div>
+  
+    <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+     <div class="filtercontainer">
+        <div class="filterDiv Design"> Creative Jam</div>
+        <div class="filterDiv Leadership Design">BUO Social Media</div>
+        <div class="filterDiv Leadership Design">BRIC</div>
+        <div class="filterDiv Art Leadership">Candide</div>
+        <div class="filterDiv Leadership">WE@Brown</div>
+        <div class="filterDiv Code">This Website :0</div>
+        <!--Ragtime-->
+        <div class="filterDiv Art Leadership">
+            <img src="ragtime.jpeg" alt ="ragtime" width = 100% height = auto>
+            <div>Ragtime</div>
+
+        </div>
+        <div class="filterDiv Code">Kennedy Center</div>
+        <div class="filterDiv Code">Rhythm Practice</div>
+        <div class="filterDiv Code">Othello</div>
+        <div class="filterDiv Code">Tetris</div>
+        <div class="filterDiv Art">Traditional Art Portfolio</div>
+        <div class="filterDiv Art">Digital Art Portfolio</div>
+
+
+    </div>
+
+
+    <!-- Footer -->
+    <div class = "footer">
+        <a href ="mailto:xinru_li@brown.edu" >Get in touch!</a>
+        <p>made with love by Xinru Li</p>
+    </div>
+
+
+
+
+
+
+
+    <!--Javascript!-->
+    <script>
+        filterSelection("all")
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("filterDiv");
+            if (c == "all") c = "";
+            // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+            for (i = 0; i < x.length; i++) {
+            w3RemoveClass(x[i], "show");
+            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+            }
+        }
+
+        // Show filtered elements
+        function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {
+                element.className += " " + arr2[i];
+                }
+            }
+        }
+
+        // Hide elements that are not selected
+        function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+        // Add active class to the current control button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
   </body>
 </html>
