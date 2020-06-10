@@ -3,6 +3,7 @@
   <head> <!--where basic parameters go, will probably not show on website--> 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
 
     <title>Xinru Li</title>
     <style>
@@ -88,17 +89,7 @@
       .right a{
           text-decoration: none;
       }
-      /*responsive layout*/
-      @media screen and (max-width: 600px){
-          .container {
-              flex-direction: column;
-          }
-          .filterDiv{
-              border-radius: 5px; 
-
-              width: 100%; 
-          }
-      }
+      
 
 
       /*
@@ -136,11 +127,15 @@
       filter system
       */
       .filtercontainer {
-          padding-left: 20px; 
+          padding-left: 20px;
+          padding-right: 20px; 
+          padding-bottom: 20px; 
           overflow: hidden;
         }
       .filterDiv {
+          color: #546393; 
           border-radius: 25px; 
+          border: 1px solid #546393;
           width: 33%;
           height: auto; 
           text-align: center;
@@ -156,22 +151,31 @@
           right: 0;
           background: #546393;
           color: white;
-          margin-bottom: 5px;
           opacity: 0;
           visibility: hidden;
           -webkit-transition: visibility 0s, opacity 0.5s linear;
           transition: visibility 0s, opacity 0.5s linear; 
+          line-height: 20px;
 
       }
-      .filterDiv:hover{
-          cursor: pointer;
+      .filterDiv div a{
+          text-align: right; 
+          color: white; 
+      }
+      .filterDiv div h1{
+          line-height: 1;
       }
       .filterDiv:hover div{
           width: 100%;
           height: 100%;
-          padding: 8px 15px; 
+          padding-top: 30px;
+          padding-left: 50px; 
+          padding-right:50px;
+          padding-bottom: 30px; 
           visibility: visible;
-          opacity: 0.7;
+          opacity: 0.9;
+          text-align: left; 
+          overflow:scroll;
 
       }
       /* The "show" class is added to the filtered elements */
@@ -205,7 +209,27 @@
           padding-bottom: 20px; 
       }
 
-
+      /*responsive layout*/
+      @media screen and (max-width: 600px){
+          .container {
+              flex-direction: column;
+          }
+          .filterDiv{
+              border-radius: 10px; 
+              width: 100%;
+          }
+          /*.filterDiv:active div{
+            width: 100%;
+            height: 100%;
+            padding-top: 20px;
+            padding-left: 30px; 
+            padding-right:30px; 
+            visibility: visible;
+            opacity: 0.9;
+            text-align: left; 
+            overflow: scroll;
+          }*/
+      }
 
     </style>
 
@@ -259,24 +283,137 @@
   
     <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
      <div class="filtercontainer">
-        <div class="filterDiv Design"> Creative Jam</div>
-        <div class="filterDiv Leadership Design">BUO Social Media</div>
-        <div class="filterDiv Leadership Design">BRIC</div>
-        <div class="filterDiv Art Leadership">Candide</div>
-        <div class="filterDiv Leadership">WE@Brown</div>
-        <div class="filterDiv Code">This Website :0</div>
+        <div class="filterDiv Design"> Adobe Nickoledon</div>
+        <div class="filterDiv Design"> Adobe AirBnb</div>
+        <!--BUO Social Media-->
+        <div class="filterDiv Leadership Design">
+            <img src="buo.jpeg" alt ="Brown University Orchestra" width=100% height =auto/>
+            <b>Brown University Orchestra - Publicity Manager</b>
+            <div>
+                <h1>Brown University Orchestra </h1>
+                <h2>Publicity Manager</h2>
+                <h2><i>Fall 2019 - Spring 2020</i></h2>
+                <p> In 9 months, I was able to increase our Facebook and Instagram following by ~700 (110%), and total post reach by 460%!
+                    Through this opportunity, I got to try a lot of different things, such as using a DSLR camera and professionally editing photos, Facebook/Instagram Analytics, 
+                and creating/leading our 9 person social media team to make over 60 posts! I also got to initiatate fun programs such as the Orchestra Petting Zoo and Orchestra Families.  </p>
+                <a href="https://www.facebook.com/BrownUniversityOrchestra/" target="_blank"> BUO Facebook</a> <br>
+                <a href="https://www.instagram.com/brownuniversityorchestra/" target="_blank"> BUO Instagram</a> 
+
+            </div>
+        </div>
+        <!--BRIC-->
+        <div class="filterDiv Leadership Design">
+            <img src="bricunofficiallogo.gif" alt ="Brown RISD Innovation Community" width=100% height =auto/>
+            <b>BRIC - Co-Founder, Marketing + Design</b>
+            <div>
+                <h1>Brown RISD Innovation Community </h1>
+                <h2>Co-Founder, Marketing + Design</h2>
+                <h2><i>Spring 2020 - Present</i></h2>
+                <p> I co-founded this club with two friends out of a desire to create an intersectional 
+                    innovation community between Brown and RISD. We reached out to hundreds of students, profesionals, 
+                    and professors to fully develop our idea and currently have a founding team of 10 people. I'm currently 
+                    leading the marketing and design team of 4 to create our visual identity. It's such a fun 
+                    learning process and please reach out with any questions or ideas! </p>
+                <p>Stay tuned to see our website! </p>
+            </div>
+        </div>
+        <!--Candide-->
+        <div class="filterDiv Art Leadership"><img src="candide.jpg" alt ="Candide" width=100% height =auto/>
+            <b>Candide - Producer and Orchestral Music Director</b>
+            <div>
+                <h1>Candide </h1>
+                <h2>Producer and Orchestral Music Director</h2>
+                <h2><i>Spring 2020</i></h2>
+                <p> I had the opportunity to produce Leonard Bernstein's <i>Candide</i> with over 40 students 
+                through Brown Opera Productions. <i>Candide</i> is one of my favorite operas of all time, so I 
+                had the opporutnity to see the entire production through, from forming a team (twice), to creating
+                the budget, to learning about copyright, to trying my best to teach the incredibly difficult music
+                as conductor, to finally managing the chaos that ensued due to COVID-19. </p>
+                <a href="https://brownoperaproductions.com/" target="_blank"> Brown Opera Productions</a> 
+            </div>
+        </div>
+        <!--WE@Brown-->
+        <div class="filterDiv Leadership">
+            <img src="weatbrown.png" alt ="WE@Brown" width=100% height =auto/>
+            <b>WE@Brown 2020 - Lead Coordinator</b>
+            <div>
+                <h1>WE@Brown 2020 Conference </h1>
+                <h2>Lead Coordinator</h2>
+                <h2><i>Fall 2019 - Spring 2020</i></h2>
+                <p> Led the Women Empowerment Team at Brown Entrepreneurship Program to plan our spring conference 
+                    celebrating and empowering women in entrepreneurship. Together, we recruited over 20 speakers,
+                    recorded over 300 registered attendees, and raised around $10,000 of in kind sponsorships from 
+                    partners such as Canva, Hint, and the Flex Company. I learned a lot about leadership, event planning/crisis management, 
+                    and women in entrepreneurship! </p>
+                <a href="http://brownentrepreneurship.com/we-at-brown" target="_blank"> Event Website</a> <br>
+                <a href="https://entrepreneurship.brown.edu/2020/04/webrown-conference-2020-uplift/" target="_blank"> Conference Recap</a>
+
+            </div>
+        </div>
+        <!--This Website :0-->
+        <div class="filterDiv Design Code">
+            <img src="IMG_0252.jepg" alt ="this website" width=100% height =auto/>
+            <b>This Website</b>
+            <div>
+                <h1>This Website </h1>
+                <h2>HTML/CSS/JavaScript/AdobeXD</h2>
+                <h2><i>Summer 2020 - Present</i></h2>
+                <p> I'm finally fulfilling my longtime goal of creating a website from scratch! 
+                    I prototyped this website on AdobeXD and learned HTML/CSS/JavaScript along the way.
+                    There's probably a lot of bugs and I'm planning on adding lots of more fun functionalities, so stay tuned!
+                    Also, the v in my web address stands for violas. I don't actually have a middle name. </p>
+                <a href="https://github.com/xinruviolas/xinruviolas.github.io" target="_blank"> Look at the code :o</a> 
+            </div>
+        </div>
         <!--Ragtime-->
         <div class="filterDiv Art Leadership">
-            <img src="ragtime.jpeg" alt ="ragtime" width = 100% height = auto>
-            <div>Ragtime</div>
-
+            <img src="ragtime.jpeg" alt ="ragtime" width=100% height =auto/>
+            <b>Ragtime - Orchestral Music Director</b>
+            <div>
+                <h1>Ragtime </h1>
+                <h2>Orchestral Music Director</h2>
+                <h2><i>Fall 2019</i></h2>
+                <p>I conducted a pit orchestra for a production of the award winning musical <i>Ragtime</i> with the student production group Musical Forum at Brown University. 
+                It was my first time conducting a production of this scale and I truly learned a lot! </p>
+                <a href="https://www.browntheatrecollective.com/ragtime" target="_blank">learn more!</a>
+            </div>
         </div>
         <div class="filterDiv Code">Kennedy Center</div>
-        <div class="filterDiv Code">Rhythm Practice</div>
+        <!--Rhythm Practice-->
+        <div class="filterDiv Code">
+            <img src="rhythmpractice.png" alt ="Rhythm Practice" width=100% height =auto/>
+            <b>Hack@Brown Participant</b>
+            <div>
+                <h1>Rhythm Practice </h1>
+                <h2>Hack@Brown Participant</h2>
+                <h2><i>Spring 2019</i></h2>
+                <p> I designed the musical algorithm and UI/UX layout
+                    for this iOS app I developed with a team of 4 during 
+                    Hack@Brown 2019. My team won the First Time Hacker
+                    Award out of 500 students! </p>
+                    <a href="https://2019.hackatbrown.org/" target="_blank">Hack@Brown 2019</a>
+
+            </div>
+        </div>
         <div class="filterDiv Code">Othello</div>
         <div class="filterDiv Code">Tetris</div>
         <div class="filterDiv Art">Traditional Art Portfolio</div>
         <div class="filterDiv Art">Digital Art Portfolio</div>
+        <!--COLT short film-->
+        <div class="filterDiv Art Design Code">
+            <img src="coltfilm.png" alt ="metaphysical short film" width=100% height =auto/>
+            <b>Short Detective Film - Creator</b>
+            <div>
+                <h1>Short Detective Film </h1>
+                <h2>Creator</h2>
+                <h2><i>Spring 2020</i></h2>
+                <p> This is a short film I made on Adobe Premiere and Adobe XD as the final project for my 
+                    Global Detective Fiction Class. It's a metaphysical detective film filmed as though the 
+                    viewer is seeing the "narrator's" computer screen. I prototyped everything on Adobe XD (over 100 artboards...) or the 
+                    inspect tool and learned a surprising amount of UI/UX design practices. </p>
+                <p>Message me to see it!</p>
+            </div>
+        </div>
 
 
     </div>
