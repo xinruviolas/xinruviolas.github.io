@@ -6,6 +6,8 @@
     <meta content="width=device-width, initial-scale=1" name="viewport" />
 
     <title>About Me!</title>
+    <link rel="icon" href="icon.jpeg">
+
     <style>
       /* css goes here */
       body {
@@ -61,23 +63,6 @@
       *{
           box-sizing:border-box;
       }
-      .container {
-          display: flex; 
-          flex-wrap: wrap;
-          text-decoration: none; 
-          outline: none;
-      }
-      .left{
-          flex: 30%;
-          padding: 20px;
-
-      }
-      .right{
-          flex: 70%;
-          padding: 20px;
-
-          
-      }
       
       .right h1{
           animation: type 3s; 
@@ -85,11 +70,36 @@
           white-space: nowrap; 
 
       }
-      .right a{
-          text-decoration: none;
-      }
       
 
+      .links a{
+          text-decoration: none;
+          padding-left: 20px; 
+      }
+
+      .row {
+          display: flex;
+      }
+
+      .column {
+          flex: 50%;
+          float: center; 
+          padding-left: 40px; 
+      }
+
+
+      mark {
+          background-color: #A3E3E1;
+          color: #707070;   
+      }
+      mark:hover {
+          background-color: #F8F687;
+          color: #707070; 
+      }
+      a {
+          text-decoration: none; 
+          color: #606060
+      }
 
       /*
       typing effect
@@ -145,33 +155,61 @@
         <a href="#">ABOUT</a>
     </div>
 
-    <!-- Content in Header -->
-    <div class = "container">
-        <div class= "left">
-            <img src="IMG_0252.jpeg" alt="photo of me!" width = 100%>
-        </div>
-        
-        <div class = "right">
-            <h1> Hello! I'm Xinru :) </h1>
+    <!-- Content  -->
+    <div class="row">
+        <div class="column">
+            <h1> Hiyooo!!! </h1>
             <p>Welcome to my website! </p>
-            <p>I'm a computer science-economics and music student at Brown University. </p>
-            <p>I love art, startups, and learning new things. See some of my adventures below! </p>
-            <p>
-                <a href="https://www.linkedin.com/in/xinruli/"><img src = "Linkedin.png" alt="Linkedin" style="border:0px; margin:8px" width=30px> </a>
-                <a href="https://github.com/xinruviolas"><img src = "github.png" alt="Github" style="border:0px; margin:8px" width=30px> </a>
-                <a href="mailto:xinru_li@brown.edu"><img src = "gmail.png" alt="Email" style="border:0px; margin:8px" width=30px> </a>
-                <a href="mailto:xinru_li@brown.edu"><img src = "resume.png" alt="Resume" style="border:0px; margin:8px" width=30px> </a>
-                    <!-- don't forget to ctually have the resume on here -->
+            <p>I’m a rising junior at <mark><a href="https://www.brown.edu/" target="_blank">Brown University</a></mark> studying Music 
+                and Computer Science-Economics. I’m a creative problem 
+                solver passionate about innovation, social change, 
+                and the future of art. My extracurricular interests 
+                range from <mark><a href="https://www.browntheatrecollective.com/ragtime?rq=ragtime" target="_blank">conducting</a></mark>
+                 to <mark><a href="https://www.facebook.com/BrownUniversityOrchestra/" target="_blank">marketing</a></mark> to 
+                 planning a <mark><a href="http://brownentrepreneurship.com/we-at-brown" target="_blank">conference</a></mark> 
+                for women in entrepreneurship to leading my peers into 
+                the <mark><a href="https://boltatbrown.wordpress.com/" target="_blank">wilderness</a></mark>, and I’m excited to explore more! </p>
+            <p> On the more professional side, my experiences include 
+                working in Marketing and Development with the <mark><a href="https://cyso.org/" target="_blank">Chicago Youth Symphony Orchestras</a></mark>, 
+                Data and Analytics with the <mark><a href="https://www.kennedy-center.org/" target="_blank">Kennedy Center for the Performing Arts</a></mark>, 
+                and, this summer, learning about Venture Capital investing and supporting 
+                social minded start-ups with the <mark><a href="https://www.emersoncollective.com/" target="_blank">Emerson Collective</a></mark>. Next summer, 
+                I’d like to explore project management, software engineering, or consulting 
+                to learn more about solving problems, creating impact, and bringing an idea to life. </p>
+            <p>Things I’m currently working on (in no particular order)! </p>
+            <ul>
+                <li>Making/learn how to make a web-app to help increase the accessibility of computers for people with dyslexia
+                </li>
+                <li>A reverse virtual orchestra interactive art exhibit
+                </li>
+                <li>Researching the impact of COVID-19 on performing arts institutions and figuring out ways virtual technology can advance the arts during our current time
+                </li>
+                <li>Figuring out ways to help low income elementary students affected by COVID-19</li>
+            </ul>
+            <p>If any of these sound interesting, please feel free to reach out! :)</p>
+            <!-- Links-->
+            <div class="links">
+                <p>
+            <a href="https://www.linkedin.com/in/xinruli/" target="_blank"><img src = "linkedin.png" alt="Linkedin" style="border:0px; margin:8px" width=30px> </a>
+            <a href="https://github.com/xinruviolas"target="_blank"><img src = "github.png" alt="Github" style="border:0px; margin:8px" width=30px> </a>
+            <a href="mailto:xinru_li@brown.edu"><img src = "gmail.png" alt="Email" style="border:0px; margin:8px" width=30px> </a>
+            <a href="mailto:xinru_li@brown.edu" target="_blank"><img src = "resume.png" alt="Resume" style="border:0px; margin:8px" width=30px> </a>
+                <!-- don't forget to ctually have the resume on here -->
 
-            </p>
+                </p>
+            </div>
+        </div>
+        <div class="column">
+            <img src = "portrait1.jpeg" alt="photo" style="border:0px; margin:8px" width=40%>
+            <img src = "portrait3.jpeg" alt="we@brown photo" style="border:0px; margin:8px" width=40%>
+            <img src = "candide2.jpeg" alt="candide photo" style="border:0px; margin:8px" width=40% align ="top">
+            <img src = "portrait2.jpeg" alt="conducting" style="border:0px; margin:8px" width=40%>
+
+
         </div>
     </div>
 
     
-    <!-- Projects -->
-    <div class = "projects">
-        <h1> My Projects!</h1>
-    </div>
 
 
     <!-- Footer -->
