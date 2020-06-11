@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> <!--where basic parameters go, will probably not show on website--> 
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+    <title>About Me!</title>
+    <style>
+      /* css goes here */
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #707070
+      }
+      
+
+      /* formatting the navbar*/
+      .navbar{
+          overflow: auto;
+      }
+      .navbar a{
+          float: left;
+          color: #707070;
+          padding: 20px; 
+          font-size: larger;
+          font-weight: bold;
+          text-decoration: none
+      }
+      .navbar a:hover{
+          text-decoration: underline;
+          color: #546393
+      }
+
+
+      /* formatting the footer */
+      .footer{
+          text-align: center;
+          padding-top: 30px;
+          padding-bottom: 10px;
+          background: #546393;
+          color: #ffffff;
+      }
+      .footer a{
+          text-decoration: none;
+          color: #FFFFFF;
+          font-size:large;
+          border: 2px solid #FFFFFF;
+          border-radius: 25px; 
+          padding: 10px; 
+      }
+      .footer a:hover{
+          background: #FFFFFF;
+          color:#546393
+      }
+      .footer p{
+          padding: 10px;
+          font-size: small;
+      }
+
+      /* formatting intro photo + me*/
+      *{
+          box-sizing:border-box;
+      }
+      .container {
+          display: flex; 
+          flex-wrap: wrap;
+          text-decoration: none; 
+          outline: none;
+      }
+      .left{
+          flex: 30%;
+          padding: 20px;
+
+      }
+      .right{
+          flex: 70%;
+          padding: 20px;
+
+          
+      }
+      
+      .right h1{
+          animation: type 3s; 
+          overflow: hidden; 
+          white-space: nowrap; 
+
+      }
+      .right a{
+          text-decoration: none;
+      }
+      
+
+
+      /*
+      typing effect
+      */
+      @keyframes type {
+          0%{
+              width:0ch;
+          }
+          100%{
+              width: 16ch;
+          }
+      }
+
+
+      /*
+      projects
+      */
+      @keyframes slide{
+          0%{margin-left: -20px}
+          75%{margin-left: -20px}
+          100%{margin-left: 0px}
+        }
+      
+      .projects{
+        padding-left: 20px; 
+      }
+      .projects h1{
+        animation: slide 3s; 
+        overflow: hidden; 
+        white-space: nowrap; 
+      }
+
+      
+      /*responsive layout*/
+      @media screen and (max-width: 600px){
+          .container {
+              flex-direction: column;
+          }
+          .filterDiv{
+              border-radius: 10px; 
+              width: 100%;
+          }
+      }
+    </style>
+
+  </head>
+
+  <body>  <!-- where contnet goes -->
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="index.html">HOME</a>
+        <a href="#">ABOUT</a>
+    </div>
+
+    <!-- Content in Header -->
+    <div class = "container">
+        <div class= "left">
+            <img src="IMG_0252.jpeg" alt="photo of me!" width = 100%>
+        </div>
+        
+        <div class = "right">
+            <h1> Hello! I'm Xinru :) </h1>
+            <p>Welcome to my website! </p>
+            <p>I'm a computer science-economics and music student at Brown University. </p>
+            <p>I love art, startups, and learning new things. See some of my adventures below! </p>
+            <p>
+                <a href="https://www.linkedin.com/in/xinruli/"><img src = "Linkedin.png" alt="Linkedin" style="border:0px; margin:8px" width=30px> </a>
+                <a href="https://github.com/xinruviolas"><img src = "github.png" alt="Github" style="border:0px; margin:8px" width=30px> </a>
+                <a href="mailto:xinru_li@brown.edu"><img src = "gmail.png" alt="Email" style="border:0px; margin:8px" width=30px> </a>
+                <a href="mailto:xinru_li@brown.edu"><img src = "resume.png" alt="Resume" style="border:0px; margin:8px" width=30px> </a>
+                    <!-- don't forget to ctually have the resume on here -->
+
+            </p>
+        </div>
+    </div>
+
+    
+    <!-- Projects -->
+    <div class = "projects">
+        <h1> My Projects!</h1>
+    </div>
+
+
+    <!-- Footer -->
+    <div class = "footer">
+        <a href ="mailto:xinru_li@brown.edu" >Get in touch!</a>
+        <p>made with love by Xinru Li</p>
+    </div>
+
+  </body>
+</html>
