@@ -1,0 +1,268 @@
+/* css goes here */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #707070;
+}
+
+/* formatting the navbar*/
+.navbar {
+  overflow: auto;
+}
+.navbar a {
+  float: left;
+  color: #707070;
+  padding: 20px;
+  font-size: larger;
+  font-weight: bold;
+  text-decoration: none;
+}
+.navbar a:hover {
+  text-decoration: underline;
+  color: #546393;
+}
+
+/* formatting the footer */
+.footer {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  background: #546393;
+  color: #ffffff;
+}
+.footer a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: large;
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+  padding: 10px;
+}
+.footer a:hover {
+  background: #ffffff;
+  color: #546393;
+}
+.footer p {
+  padding: 10px;
+  font-size: small;
+}
+
+/* formatting intro photo + me*/
+* {
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  text-decoration: none;
+  outline: none;
+}
+.left {
+  flex: 30%;
+  padding: 20px;
+}
+.right {
+  flex: 70%;
+  padding: 20px;
+}
+
+.right h1 {
+  animation: type 3s;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.right a {
+  text-decoration: none;
+}
+
+/*
+  typing effect
+  */
+@keyframes type {
+  0% {
+    width: 0ch;
+  }
+  100% {
+    width: 16ch;
+  }
+}
+
+/*
+  projects
+  */
+@keyframes slide {
+  0% {
+    margin-left: -20px;
+  }
+  75% {
+    margin-left: -20px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+
+.projects {
+  padding-left: 20px;
+}
+.projects h1 {
+  animation: slide 3s;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/*
+  filter system
+  */
+.filtercontainer {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  overflow: hidden;
+}
+.filterDiv {
+  color: #546393;
+  border-radius: 25px;
+  border: 1px solid #546393;
+  width: 33%;
+  height: auto;
+  text-align: center;
+  margin: 2px;
+  display: none; /* Hidden by default */
+  overflow: hidden;
+  float: left;
+  position: relative;
+}
+.filterDiv div {
+  /*hover layout*/
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #546393;
+  color: white;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: visibility 0s, opacity 0.5s linear;
+  transition: visibility 0s, opacity 0.5s linear;
+  line-height: 20px;
+}
+.filterDiv div a {
+  text-align: right;
+  color: white;
+}
+.filterDiv div h1 {
+  line-height: 1;
+}
+.filterDiv:hover div {
+  width: 100%;
+  height: 100%;
+  padding-top: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 30px;
+  visibility: visible;
+  opacity: 0.9;
+  text-align: left;
+  overflow: scroll;
+}
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+/* Style the buttons */
+.btn {
+  outline: none;
+  padding: 12px;
+  background-color: #ffffff;
+  cursor: pointer;
+  text-decoration: none;
+  color: #546393;
+  border: 2px solid #546393;
+  line-height: 1px;
+  border-radius: 15px;
+}
+/* inverts color on mouse-over */
+.btn:hover {
+  background-color: #546393;
+  color: #ffffff;
+}
+/* Add a dark background to the active button */
+.btn.active {
+  background-color: #546393;
+  color: #ffffff;
+}
+#myBtnContainer {
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+/*responsive layout*/
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+  .filterDiv {
+    border-radius: 10px;
+    width: 100%;
+  }
+  /*.filterDiv:active div{
+        width: 100%;
+        height: 100%;
+        padding-top: 20px;
+        padding-left: 30px; 
+        padding-right:30px; 
+        visibility: visible;
+        opacity: 0.9;
+        text-align: left; 
+        overflow: scroll;
+      }*/
+}
+/* for about page */
+.links a {
+  text-decoration: none;
+  padding-left: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 50%;
+  float: center;
+  padding-left: 40px;
+}
+
+mark {
+  background-color: #a3e3e1;
+  color: #707070;
+}
+mark:hover {
+  background-color: #f8f687;
+  color: #707070;
+}
+a {
+  text-decoration: none;
+  color: #606060;
+}
+
+/* Preloader! */
+.doggo {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding-top: 0px;
+  text-align: center;
+}
+
+.doggo-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  z-index: 10;
+}
