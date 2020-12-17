@@ -1,224 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head> <!--where basic parameters go, will probably not show on website--> 
+  <head>
+    <!--where basic parameters go, will probably not show on website-->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
 
     <title>Xinru Li</title>
-    <link rel="icon" href="icon.jpeg">
+    <link rel="icon" href="icon.jpeg" />
     <style>
       /* css goes here */
       body {
         font-family: Arial, Helvetica, sans-serif;
-        color: #707070
+        color: #707070;
       }
-      
 
       /* formatting the navbar*/
-      .navbar{
-          overflow: auto;
+      .navbar {
+        overflow: auto;
       }
-      .navbar a{
-          float: left;
-          color: #707070;
-          padding: 20px; 
-          font-size: larger;
-          font-weight: bold;
-          text-decoration: none
+      .navbar a {
+        float: left;
+        color: #707070;
+        padding: 20px;
+        font-size: larger;
+        font-weight: bold;
+        text-decoration: none;
       }
-      .navbar a:hover{
-          text-decoration: underline;
-          color: #546393
+      .navbar a:hover {
+        text-decoration: underline;
+        color: #546393;
       }
-
 
       /* formatting the footer */
-      .footer{
-          text-align: center;
-          padding-top: 30px;
-          padding-bottom: 10px;
-          background: #546393;
-          color: #ffffff;
+      .footer {
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 10px;
+        background: #546393;
+        color: #ffffff;
       }
-      .footer a{
-          text-decoration: none;
-          color: #FFFFFF;
-          font-size:large;
-          border: 2px solid #FFFFFF;
-          border-radius: 25px; 
-          padding: 10px; 
+      .footer a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: large;
+        border: 2px solid #ffffff;
+        border-radius: 25px;
+        padding: 10px;
       }
-      .footer a:hover{
-          background: #FFFFFF;
-          color:#546393
+      .footer a:hover {
+        background: #ffffff;
+        color: #546393;
       }
-      .footer p{
-          padding: 10px;
-          font-size: small;
+      .footer p {
+        padding: 10px;
+        font-size: small;
       }
 
       /* formatting intro photo + me*/
-      *{
-          box-sizing:border-box;
+      * {
+        box-sizing: border-box;
       }
       .container {
-          display: flex; 
-          flex-wrap: wrap;
-          text-decoration: none; 
-          outline: none;
+        display: flex;
+        flex-wrap: wrap;
+        text-decoration: none;
+        outline: none;
       }
-      .left{
-          flex: 30%;
-          padding: 20px;
+      .left {
+        flex: 30%;
+        padding: 20px;
+      }
+      .right {
+        flex: 70%;
+        padding: 20px;
+      }
 
+      .right h1 {
+        animation: type 3s;
+        overflow: hidden;
+        white-space: nowrap;
       }
-      .right{
-          flex: 70%;
-          padding: 20px;
-
-          
+      .right a {
+        text-decoration: none;
       }
-      
-      .right h1{
-          animation: type 3s; 
-          overflow: hidden; 
-          white-space: nowrap; 
-
-      }
-      .right a{
-          text-decoration: none;
-      }
-      
-
 
       /*
       typing effect
       */
       @keyframes type {
-          0%{
-              width:0ch;
-          }
-          100%{
-              width: 16ch;
-          }
+        0% {
+          width: 0ch;
+        }
+        100% {
+          width: 16ch;
+        }
       }
-
 
       /*
       projects
       */
-      @keyframes slide{
-          0%{margin-left: -20px}
-          75%{margin-left: -20px}
-          100%{margin-left: 0px}
+      @keyframes slide {
+        0% {
+          margin-left: -20px;
         }
-      
-      .projects{
-        padding-left: 20px; 
+        75% {
+          margin-left: -20px;
+        }
+        100% {
+          margin-left: 0px;
+        }
       }
-      .projects h1{
-        animation: slide 3s; 
-        overflow: hidden; 
-        white-space: nowrap; 
+
+      .projects {
+        padding-left: 20px;
+      }
+      .projects h1 {
+        animation: slide 3s;
+        overflow: hidden;
+        white-space: nowrap;
       }
 
       /*
       filter system
       */
       .filtercontainer {
-          padding-left: 20px;
-          padding-right: 20px; 
-          padding-bottom: 20px; 
-          overflow: hidden;
-        }
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        overflow: hidden;
+      }
       .filterDiv {
-          color: #546393; 
-          border-radius: 25px; 
-          border: 1px solid #546393;
-          width: 33%;
-          height: auto; 
-          text-align: center;
-          margin: 2px;
-          display: none; /* Hidden by default */
-          overflow: hidden;
-          float:left;
-          position: relative; 
-        }
-      .filterDiv div{/*hover layout*/
-          position: absolute;
-          bottom: 0;
-          right: 0;
-          background: #546393;
-          color: white;
-          opacity: 0;
-          visibility: hidden;
-          -webkit-transition: visibility 0s, opacity 0.5s linear;
-          transition: visibility 0s, opacity 0.5s linear; 
-          line-height: 20px;
-
+        color: #546393;
+        border-radius: 25px;
+        border: 1px solid #546393;
+        width: 33%;
+        height: auto;
+        text-align: center;
+        margin: 2px;
+        display: none; /* Hidden by default */
+        overflow: hidden;
+        float: left;
+        position: relative;
       }
-      .filterDiv div a{
-          text-align: right; 
-          color: white; 
+      .filterDiv div {
+        /*hover layout*/
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background: #546393;
+        color: white;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: visibility 0s, opacity 0.5s linear;
+        transition: visibility 0s, opacity 0.5s linear;
+        line-height: 20px;
       }
-      .filterDiv div h1{
-          line-height: 1;
+      .filterDiv div a {
+        text-align: right;
+        color: white;
       }
-      .filterDiv:hover div{
-          width: 100%;
-          height: 100%;
-          padding-top: 30px;
-          padding-left: 50px; 
-          padding-right:50px;
-          padding-bottom: 30px; 
-          visibility: visible;
-          opacity: 0.9;
-          text-align: left; 
-          overflow:scroll;
-
+      .filterDiv div h1 {
+        line-height: 1;
+      }
+      .filterDiv:hover div {
+        width: 100%;
+        height: 100%;
+        padding-top: 30px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 30px;
+        visibility: visible;
+        opacity: 0.9;
+        text-align: left;
+        overflow: scroll;
       }
       /* The "show" class is added to the filtered elements */
       .show {
-          display: block;
-        }
+        display: block;
+      }
       /* Style the buttons */
       .btn {
-          outline: none;
-          padding: 12px;
-          background-color: #FFFFFF;
-          cursor: pointer;
-          text-decoration: none;
-          color: #546393;
-          border: 2px solid #546393;
-          line-height: 1px; 
-          border-radius: 15px; 
-          }
+        outline: none;
+        padding: 12px;
+        background-color: #ffffff;
+        cursor: pointer;
+        text-decoration: none;
+        color: #546393;
+        border: 2px solid #546393;
+        line-height: 1px;
+        border-radius: 15px;
+      }
       /* inverts color on mouse-over */
       .btn:hover {
-          background-color: #546393;
-          color: #FFFFFF;
-          }
+        background-color: #546393;
+        color: #ffffff;
+      }
       /* Add a dark background to the active button */
       .btn.active {
-          background-color: #546393;
-          color: #FFFFFF;
-          }
-      #myBtnContainer{
-          padding-left: 20px;
-          padding-bottom: 20px; 
+        background-color: #546393;
+        color: #ffffff;
+      }
+      #myBtnContainer {
+        padding-left: 20px;
+        padding-bottom: 20px;
       }
 
       /*responsive layout*/
-      @media screen and (max-width: 600px){
-          .container {
-              flex-direction: column;
-          }
-          .filterDiv{
-              border-radius: 10px; 
-              width: 100%;
-          }
-          /*.filterDiv:active div{
+      @media screen and (max-width: 600px) {
+        .container {
+          flex-direction: column;
+        }
+        .filterDiv {
+          border-radius: 10px;
+          width: 100%;
+        }
+        /*.filterDiv:active div{
             width: 100%;
             height: 100%;
             padding-top: 20px;
@@ -231,390 +228,808 @@
           }*/
       }
 
+      /*preloader*/
+
+      .pre-loader {
+        background-color: #546393;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+      }
+      .sk-fading-circle {
+        margin: 100px auto;
+        width: 40px;
+        height: 40px;
+        position: relative;
+      }
+      .sk-fading-circle .sk-circle {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      .sk-fading-circle .sk-circle:before {
+        content: "";
+        display: block;
+        margin: 0 auto;
+        width: 15%;
+        height: 15%;
+        background-color: #fff;
+        border-radius: 100%;
+        -webkit-animation: sk-circleFadeDelay 1.2s infinite ease-in-out both;
+        animation: sk-circleFadeDelay 1.2s infinite ease-in-out both;
+      }
+      .sk-fading-circle .sk-circle2 {
+        -webkit-transform: rotate(30deg);
+        -ms-transform: rotate(30deg);
+        transform: rotate(30deg);
+      }
+      .sk-fading-circle .sk-circle3 {
+        -webkit-transform: rotate(60deg);
+        -ms-transform: rotate(60deg);
+        transform: rotate(60deg);
+      }
+      .sk-fading-circle .sk-circle4 {
+        -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+      }
+      .sk-fading-circle .sk-circle5 {
+        -webkit-transform: rotate(120deg);
+        -ms-transform: rotate(120deg);
+        transform: rotate(120deg);
+      }
+      .sk-fading-circle .sk-circle6 {
+        -webkit-transform: rotate(150deg);
+        -ms-transform: rotate(150deg);
+        transform: rotate(150deg);
+      }
+      .sk-fading-circle .sk-circle7 {
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg);
+      }
+      .sk-fading-circle .sk-circle8 {
+        -webkit-transform: rotate(210deg);
+        -ms-transform: rotate(210deg);
+        transform: rotate(210deg);
+      }
+      .sk-fading-circle .sk-circle9 {
+        -webkit-transform: rotate(240deg);
+        -ms-transform: rotate(240deg);
+        transform: rotate(240deg);
+      }
+      .sk-fading-circle .sk-circle10 {
+        -webkit-transform: rotate(270deg);
+        -ms-transform: rotate(270deg);
+        transform: rotate(270deg);
+      }
+      .sk-fading-circle .sk-circle11 {
+        -webkit-transform: rotate(300deg);
+        -ms-transform: rotate(300deg);
+        transform: rotate(300deg);
+      }
+      .sk-fading-circle .sk-circle12 {
+        -webkit-transform: rotate(330deg);
+        -ms-transform: rotate(330deg);
+        transform: rotate(330deg);
+      }
+      .sk-fading-circle .sk-circle2:before {
+        -webkit-animation-delay: -1.1s;
+        animation-delay: -1.1s;
+      }
+      .sk-fading-circle .sk-circle3:before {
+        -webkit-animation-delay: -1s;
+        animation-delay: -1s;
+      }
+      .sk-fading-circle .sk-circle4:before {
+        -webkit-animation-delay: -0.9s;
+        animation-delay: -0.9s;
+      }
+      .sk-fading-circle .sk-circle5:before {
+        -webkit-animation-delay: -0.8s;
+        animation-delay: -0.8s;
+      }
+      .sk-fading-circle .sk-circle6:before {
+        -webkit-animation-delay: -0.7s;
+        animation-delay: -0.7s;
+      }
+      .sk-fading-circle .sk-circle7:before {
+        -webkit-animation-delay: -0.6s;
+        animation-delay: -0.6s;
+      }
+      .sk-fading-circle .sk-circle8:before {
+        -webkit-animation-delay: -0.5s;
+        animation-delay: -0.5s;
+      }
+      .sk-fading-circle .sk-circle9:before {
+        -webkit-animation-delay: -0.4s;
+        animation-delay: -0.4s;
+      }
+      .sk-fading-circle .sk-circle10:before {
+        -webkit-animation-delay: -0.3s;
+        animation-delay: -0.3s;
+      }
+      .sk-fading-circle .sk-circle11:before {
+        -webkit-animation-delay: -0.2s;
+        animation-delay: -0.2s;
+      }
+      .sk-fading-circle .sk-circle12:before {
+        -webkit-animation-delay: -0.1s;
+        animation-delay: -0.1s;
+      }
+      @-webkit-keyframes sk-circleFadeDelay {
+        0%,
+        39%,
+        100% {
+          opacity: 0;
+        }
+        40% {
+          opacity: 1;
+        }
+      }
+      @keyframes sk-circleFadeDelay {
+        0%,
+        39%,
+        100% {
+          opacity: 0;
+        }
+        40% {
+          opacity: 1;
+        }
+      }
     </style>
-
-    
-
   </head>
 
-  <body>  <!-- where contnet goes -->
+  <body>
+    <!-- where contnet goes -->
+    <!-- preloader -->
+    <div class="pre-loader">
+      <div class="sk-fading-circle">
+        <div class="sk-circle1 sk-circle"></div>
+        <div class="sk-circle2 sk-circle"></div>
+        <div class="sk-circle3 sk-circle"></div>
+        <div class="sk-circle4 sk-circle"></div>
+        <div class="sk-circle5 sk-circle"></div>
+        <div class="sk-circle6 sk-circle"></div>
+        <div class="sk-circle7 sk-circle"></div>
+        <div class="sk-circle8 sk-circle"></div>
+        <div class="sk-circle9 sk-circle"></div>
+        <div class="sk-circle10 sk-circle"></div>
+        <div class="sk-circle11 sk-circle"></div>
+        <div class="sk-circle12 sk-circle"></div>
+      </div>
+    </div>
 
     <!-- Navigation Bar -->
     <div class="navbar">
-        <a href="#">HOME</a>
-        <a href="about.html">ABOUT</a>
+      <a href="#">HOME</a>
+      <a href="about.html">ABOUT</a>
     </div>
 
     <!-- Content in Header -->
-    <div class = "container">
-        <div class= "left">
-            <img src="IMG_0252.jpeg" alt="photo of me!" width = 100%>
-        </div>
-        
-        <div class = "right">
-            <h1> Hello! I'm Xinru :) </h1>
-            <p>Welcome to my website! </p>
-            <p>I'm a computer science-economics and music student at Brown University. </p>
-            <p>I love art, startups, and learning new things of any and all types. See some of my adventures below! </p>
-            <p>
-                <a href="https://www.linkedin.com/in/xinruli/" target="_blank" ><img src = "linkedin.png" alt="Linkedin" style="border:0px; margin:8px" width=30px> </a>
-                <a href="https://github.com/xinruviolas" target="_blank" ><img src = "github.png" alt="Github" style="border:0px; margin:8px" width=30px> </a>
-                <a href="mailto:xinru_li@brown.edu"><img src = "gmail.png" alt="Email" style="border:0px; margin:8px" width=30px> </a>
-                <a href="Xinru Li Resume.pdf" target="_blank"><img src = "resume.png" alt="Resume" style="border:0px; margin:8px" width=30px> </a>
-                    <!-- don't forget to ctually have the resume on here -->
+    <div class="container">
+      <div class="left">
+        <img src="IMG_0252.jpeg" alt="photo of me!" width="100%" />
+      </div>
 
-            </p>
-        </div>
+      <div class="right">
+        <h1>Hello! I'm Xinru :)</h1>
+        <p>Welcome to my website!</p>
+        <p>
+          I'm a computer science-economics and music student at Brown
+          University.
+        </p>
+        <p>
+          I love art, startups, and learning new things of any and all types.
+          See some of my adventures below!
+        </p>
+        <p>
+          <a href="https://www.linkedin.com/in/xinruli/" target="_blank"
+            ><img
+              src="linkedin.png"
+              alt="Linkedin"
+              style="border: 0px; margin: 8px"
+              width="30px"
+            />
+          </a>
+          <a href="https://github.com/xinruviolas" target="_blank"
+            ><img
+              src="github.png"
+              alt="Github"
+              style="border: 0px; margin: 8px"
+              width="30px"
+            />
+          </a>
+          <a href="mailto:xinru_li@brown.edu"
+            ><img
+              src="gmail.png"
+              alt="Email"
+              style="border: 0px; margin: 8px"
+              width="30px"
+            />
+          </a>
+          <a href="Xinru Li Resume.pdf" target="_blank"
+            ><img
+              src="resume.png"
+              alt="Resume"
+              style="border: 0px; margin: 8px"
+              width="30px"
+            />
+          </a>
+          <!-- don't forget to ctually have the resume on here -->
+        </p>
+      </div>
     </div>
 
-    
     <!-- Projects -->
-    <div class = "projects">
-        <h1> My Projects!</h1>
+    <div class="projects">
+      <h1>My Projects!</h1>
     </div>
     <!-- filter schebang-->
     <!-- Control buttons -->
     <div id="myBtnContainer">
-        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-        <button class="btn" onclick="filterSelection('Art')"> Art/Conducting </button>
-        <button class="btn" onclick="filterSelection('Code')"> Software </button>
-        <button class="btn" onclick="filterSelection('Design')"> Design</button>
-        <button class="btn" onclick="filterSelection('Leadership')"> Product Management</button>
+      <button class="btn active" onclick="filterSelection('all')">
+        Show all
+      </button>
+      <button class="btn" onclick="filterSelection('Art')">
+        Art/Conducting
+      </button>
+      <button class="btn" onclick="filterSelection('Code')">Software</button>
+      <button class="btn" onclick="filterSelection('Design')">Design</button>
+      <button class="btn" onclick="filterSelection('Leadership')">
+        Product Management
+      </button>
     </div>
-  
+
     <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
-     <div class="filtercontainer">
-        <!--Teaching Buddies-->
+    <div class="filtercontainer">
+      <!--BachPropagation-->
 
-        <div class="filterDiv Leadership"> 
-            <img src="teachingbuddies.png" alt ="Teaching Buddies" width=100% height =auto/>
-            <b>Teaching Buddies</b>
-            <div>
-                <h1>Teaching Buddies </h1>
-                <h2>Nonprofit Founder</h2>
-                <h2><i>Summer 2020 - Present</i></h2>
-                <p> Having gone through the Chicago Public School system and attended 5 schools in 5 years with a learning disability,
-                    educational equity is something very close to my heart. I founded Teaching Buddies after re-connecting with my third 
-                    grade teacher and learning about her challenges in teaching through Zoom in an underserved school district. I then 
-                    talked to other teachers, administrators, and parents, and realized the need to provide education centered around critical
-                    thinking to these students. Initially, I brought 
-                    together friends to teach majority BIPOC/low-income students in the CPS school system over the summer. With 
-                    very high demand from our parents, I then built our leadership 
-                    team of 9, recruited and trained over 90 volunteers, and will serve over 150 families by the end of the year. </p>
-                <a href="https://www.teachingbuddies.org/" target="_blank"> Our Website!</a>  (we're still taking students!)
-            </div>
-        </div> 
-        
-        <!--Netflix-->
-        <div class="filterDiv Design"> 
-            <img src="netflix.png" alt ="Adobe X Netflix" width=100% height =auto/>
-            <b>AdobeXD + Netflix UI/UX Design Challenge</b>
-            <div>
-                <h1>AdobeXD + Netflix </h1>
-                <h2>Participant</h2>
-                <h2><i>Summer 2020</i></h2>
-                <p> This is the third Adobe Creative Jam challenge I participated in, and the final one over the spring/summer of 2020.
-                    I joined a friend to design a desktop app that can help friends stay connected virtually through Netflix on AdobeXD.
-                    We didn't have as much time to work on this project, so it was a fun excercise in creating a user-friendly MVP in 
-                    a short amount of time, with a huge focus on simple design and user experience.  </p>
-                <a href="https://xd.adobe.com/view/8ec8c1eb-45b9-44d3-819b-60659660513d-db9b/" target="_blank"> Play with our prototype!</a> 
-            </div>
-        </div> 
-        
-        <!--BRIC-->
-        <div class="filterDiv Leadership Design">
-            <img src="bricunofficiallogo.gif" alt ="Brown RISD Innovation Community" width=100% height =auto/>
-            <b>BRIC - Co-Founder, Marketing + Design</b>
-            <div>
-                <h1>Brown RISD Innovation Community </h1>
-                <h2>Co-Founder, Marketing + Design</h2>
-                <h2><i>Spring 2020 - Present</i></h2>
-                <p> I co-founded this club with two friends out of a desire to create an intersectional 
-                    innovation community between Brown and RISD. We reached out to hundreds of students, profesionals, 
-                    and professors to fully develop our value proposition. We built a founding team of 12 people across 
-                    8 time zones to flesh out our club over the summer. I lead our marketing & design team to generate our 
-                    brand story, manage advertising across 3 channels, build a virtual community, and we grew our audience to 450+ in our first week!</p>
-                    <a href="https://brownrisdinnovation.com/" target="_blank"> Visit our website!</a>  (and subscribe to our newsletter when you scroll down!)
-            </div>
+      <div class="filterDiv Code">
+        <img
+          src="Bachpropagation.png"
+          alt="MusicExample"
+          width="100%"
+          height="auto"
+        />
+        <b>BACHPropagation</b>
+        <div>
+          <h1>BACHPropagation</h1>
+          <h2>Python + Tensorflow</h2>
+          <h2><i>Fall 2020</i></h2>
+          <p>
+            As the final project for my Deep Learning class, I worked with 3
+            friends to build an LSTM model that generates music trained on the
+            Bach corpus. We iterated a lot to learn how to manipulate and train
+            the data. I designed an algorithm that normalizes the tempo and keys
+            of all our songs, making our data simpler to train, which increased
+            our accuracy by over 20%! The outputs of our model was able to
+            follow an ABA format, stay mostly in key, and even have dominant +
+            tonic sections!
+          </p>
+          <a href="https://youtu.be/i26sKMNNEmQ" target="_blank">
+            Listen to an example!</a
+          >
+          (the second one sounds suspiciously like the Mii song)
+          <a
+            href="https://github.com/kimberly-brown/bach_propagation"
+            target="_blank"
+          >
+            Look at the Code!</a
+          >
         </div>
-        <!--AirBnb-->
-        <div class="filterDiv Design"> 
-            <img src="airbnb.png" alt ="Adobe X AirBnb" width=100% height =auto/>
-            <b>AdobeXD + Airbnb UI/UX Design Challenge</b>
-            <div>
-                <h1>AdobeXD + AirBnb </h1>
-                <h2>Participant</h2>
-                <h2><i>Spring 2020</i></h2>
-                <p> This is the second Adobe Creative Jam challenge I participated in (after the Nickelodeon challenge).
-                    I joined two friends to prototype an iPhone app for AirBnb for the post-COVID19 world.
-                    We created the app Scrapbooking, with a much higher focus on user experience and design. We 
-                    learned a lot from the Nickelodeon challenge and created a much more sophisticated prototype, 
-                    becoming the top 25% of participants!  </p>
-                <a href="https://xd.adobe.com/view/56ea9bed-8220-4982-685b-c2b5c7f9367a-20db/" target="_blank"> Play with our prototype!</a> 
-            </div>
-        </div>
-         <!--Nickoledon-->
-        <div class="filterDiv Design">
-            <img src="nickelodeon.png" alt ="Adobe X Nickelodeon" width=100% height =auto/>
-            <b>AdobeXD + Nickelodeon UI/UX Design Challenge</b>
-            <div>
-                <h1>AdobeXD + Nickelodeon </h1>
-                <h2>Participant</h2>
-                <h2><i> Spring 2020</i></h2>
-                <p> I joined two friends to learn AdobeXD and prototype an iPad app aimed at 
-                    helping kids feel connected and safe during the COVID19 pandemic. Our app
-                    is called Communify. I learnd a lot about UI/UX design, and how to use AdobeXD!
-                </p>
-                <a href="https://xd.adobe.com/view/2f06327c-4cd1-408c-7c38-64d3b967668e-5937/" target="_blank"> Play with our prototype!</a> 
-            </div>
-        </div>
-        <!--BUO Social Media-->
-        <div class="filterDiv Leadership Design">
-            <img src="buo.png" alt ="Brown University Orchestra" width=100% height =auto/>
-            <b>Brown University Orchestra - Publicity Manager</b>
-            <div>
-                <h1>Brown University Orchestra </h1>
-                <h2>Publicity Manager</h2>
-                <h2><i>Fall 2019 - Spring 2020</i></h2>
-                <p> In 9 months, I was able to increase our Facebook and Instagram following by ~700 (110%), and total post reach by 460%!
-                    Through this opportunity, I got to try a lot of different things, such as using a DSLR camera and professionally editing photos, Facebook/Instagram Analytics, 
-                and creating/leading our 9 person social media team to make over 60 posts! I also got to initiatate fun programs such as the Orchestra Petting Zoo and Orchestra Families.  </p>
-                <a href="https://www.facebook.com/BrownUniversityOrchestra/" target="_blank"> BUO Facebook</a> <br>
-                <a href="https://www.instagram.com/brownuniversityorchestra/" target="_blank"> BUO Instagram</a> 
+      </div>
 
-            </div>
-        </div>
-        <!--Candide-->
-        <div class="filterDiv Art Leadership"><img src="candide.png" alt ="Candide" width=100% height =auto/>
-            <b>Candide - Producer and Orchestral Music Director</b>
-            <div>
-                <h1>Candide </h1>
-                <h2>Producer and Orchestral Music Director</h2>
-                <h2><i>Spring 2020</i></h2>
-                <p> I had the opportunity to produce Leonard Bernstein's <i>Candide</i> with over 40 students 
-                through Brown Opera Productions. <i>Candide</i> is one of my favorite operas of all time, so I 
-                had the opporutnity to see the entire production through, from forming a team (twice), to creating
-                the budget, to learning about copyright, to trying my best to teach the incredibly difficult music
-                as conductor, to finally managing the chaos that ensued due to COVID-19. </p>
-                <a href="https://brownoperaproductions.com/" target="_blank"> Brown Opera Productions</a> 
-            </div>
-        </div>
-        <!--WE@Brown-->
-        <div class="filterDiv Leadership">
-            <img src="weatbrown.png" alt ="WE@Brown" width=100% height =auto/>
-            <b>WE@Brown 2020 - Lead Coordinator</b>
-            <div>
-                <h1>WE@Brown 2020 Conference </h1>
-                <h2>Lead Coordinator</h2>
-                <h2><i>Fall 2019 - Spring 2020</i></h2>
-                <p> Led the Women Empowerment Team at Brown Entrepreneurship Program to plan our spring conference 
-                    celebrating and empowering women in entrepreneurship. Together, we recruited over 20 speakers,
-                    recorded over 300 registered attendees, and raised around $10,000 of in kind sponsorships from 
-                    partners such as Canva, Hint, and the Flex Company. I learned a lot about leadership, event planning/crisis management, 
-                    and women in entrepreneurship! </p>
-                <a href="http://brownentrepreneurship.com/we-at-brown" target="_blank"> Event Website</a> <br>
-                <a href="https://entrepreneurship.brown.edu/2020/04/webrown-conference-2020-uplift/" target="_blank"> Conference Recap</a>
+      <!--Teaching Buddies-->
 
-            </div>
+      <div class="filterDiv Leadership">
+        <img
+          src="teachingbuddies.png"
+          alt="Teaching Buddies"
+          width="100%"
+          height="auto"
+        />
+        <b>Teaching Buddies</b>
+        <div>
+          <h1>Teaching Buddies</h1>
+          <h2>Nonprofit Founder</h2>
+          <h2><i>Summer 2020 - Present</i></h2>
+          <p>
+            Having gone through the Chicago Public School system and attended 5
+            schools in 5 years with a learning disability, educational equity is
+            something very close to my heart. I founded Teaching Buddies after
+            re-connecting with my third grade teacher and learning about her
+            challenges in teaching through Zoom in an underserved school
+            district. I then talked to other teachers, administrators, and
+            parents, and realized the need to provide education centered around
+            critical thinking to these students. Initially, I brought together
+            friends to teach majority BIPOC/low-income students in the CPS
+            school system over the summer. With very high demand from our
+            parents, I then built our leadership team of 9, recruited and
+            trained 100+ volunteers to give 600+ hours of direct service. Spring
+            apps are opening soon!
+          </p>
+          <a href="https://www.teachingbuddies.org/" target="_blank">
+            Our Website!</a
+          >
+          (we're still taking students!)
         </div>
-        <!--COLT short film-->
-        <div class="filterDiv Art Design Code Leadership">
-            <img src="coltfilm.png" alt ="metaphysical short film" width=100% height =auto/>
-            <b>Short Detective Film - Creator</b>
-            <div>
-                <h1>Short Detective Film </h1>
-                <h2>Creator</h2>
-                <h2><i>Spring 2020</i></h2>
-                <p> This is a short film I made on Adobe Premiere and Adobe XD as the final project for my 
-                    Global Detective Fiction Class. It's a metaphysical detective film filmed as though the 
-                    viewer is seeing the "narrator's" computer screen. I prototyped everything on Adobe XD (over 100 artboards...) or the 
-                    inspect tool and learned a surprising amount of UI/UX design practices. </p>
-                <p>Message me to see it!</p>
-            </div>
-        </div>
-        <!--Ragtime-->
-        <div class="filterDiv Art Leadership">
-            <img src="ragtime.png" alt ="ragtime" width=100% height =auto/>
-            <b>Ragtime - Orchestral Music Director</b>
-            <div>
-                <h1>Ragtime </h1>
-                <h2>Orchestral Music Director</h2>
-                <h2><i>Fall 2019</i></h2>
-                <p>I conducted a pit orchestra for a production of the award winning musical <i>Ragtime</i> with the student production group Musical Forum at Brown University. 
-                It was my first time conducting a production of this scale and I truly learned a lot! </p>
-                <a href="https://www.browntheatrecollective.com/ragtime" target="_blank">learn more!</a>
-            </div>
-        </div>
-        <!--Kennedy Center-->
-        <div class="filterDiv Code Leadership">
-            <img src="kc.png" alt ="Kennedy Center for the Performing Arts" width=100% height =auto/>
-            <b>Kennedy Center - Performance Predicting Tool</b>
-            <div>
-                <h1>The John F. Kennedy Center for the Performing Arts </h1>
-                <h2>Data and Analysis Intern</h2>
-                <h2><i>Summer 2020</i></h2>
-                <p> During my internship with John F. Kennedy Center for the Performing Arts this summer,
-                    I had the opportunity to create a performance attendance predicting tool on SSRS and Tableau
-                    to reduce Playbill printing waste. 
-                    It was really challenging, but fun, to learn SQL, Tableau, and how 
-                    predictive analysis works from scratch, but I got 
-                    a lot of support from my team. My tool has the potential to save $20,000 of paper annually!
-                </p>
-                <a href="https://www.kennedy-center.org/" target="_blank"> Kennedy Center Website</a> 
+      </div>
 
-            </div>
+      <!--Netflix-->
+      <div class="filterDiv Design">
+        <img
+          src="netflix.png"
+          alt="Adobe X Netflix"
+          width="100%"
+          height="auto"
+        />
+        <b>AdobeXD + Netflix UI/UX Design Challenge</b>
+        <div>
+          <h1>AdobeXD + Netflix</h1>
+          <h2>Participant</h2>
+          <h2><i>Summer 2020</i></h2>
+          <p>
+            This is the third Adobe Creative Jam challenge I participated in,
+            and the final one over the spring/summer of 2020. I joined a friend
+            to design a desktop app that can help friends stay connected
+            virtually through Netflix on AdobeXD. We didn't have as much time to
+            work on this project, so it was a fun excercise in creating a
+            user-friendly MVP in a short amount of time, with a huge focus on
+            simple design and user experience.
+          </p>
+          <a
+            href="https://xd.adobe.com/view/8ec8c1eb-45b9-44d3-819b-60659660513d-db9b/"
+            target="_blank"
+          >
+            Play with our prototype!</a
+          >
         </div>
-        <!--Rhythm Practice-->
-        <div class="filterDiv Code Leadership">
-            <img src="rhythmpractice.png" alt ="Rhythm Practice" width=100% height =auto/>
-            <b>Hack@Brown Participant</b>
-            <div>
-                <h1>Rhythm Practice </h1>
-                <h2>Hack@Brown Participant</h2>
-                <h2><i>Spring 2019</i></h2>
-                <p> I designed the musical algorithm and UI/UX layout
-                    for this iOS app I developed with a team of 4 during 
-                    Hack@Brown 2019. My team won the First Time Hacker
-                    Award out of 500 students! </p>
-                    <a href="https://2019.hackatbrown.org/" target="_blank">Hack@Brown 2019</a>
+      </div>
 
-            </div>
+      <!--BRIC-->
+      <div class="filterDiv Leadership Design">
+        <img
+          src="bricunofficiallogo.gif"
+          alt="Brown RISD Innovation Community"
+          width="100%"
+          height="auto"
+        />
+        <b>BRIC - Co-Founder, Marketing + Design</b>
+        <div>
+          <h1>Brown RISD Innovation Community</h1>
+          <h2>Co-Founder, Marketing + Design</h2>
+          <h2><i>Spring 2020 - Present</i></h2>
+          <p>
+            I co-founded this club with two friends out of a desire to create an
+            intersectional innovation community between Brown and RISD. We
+            reached out to hundreds of students, profesionals, and professors to
+            fully develop our value proposition. We built a founding team of 12
+            people across 8 time zones to flesh out our club over the summer. I
+            lead our marketing & design team to generate our brand story, manage
+            advertising across 3 channels, build a virtual community, and we
+            grew our audience to 450+ in our first week!
+          </p>
+          <a href="https://brownrisdinnovation.com/" target="_blank">
+            Visit our website!</a
+          >
+          (and subscribe to our newsletter when you scroll down!)
         </div>
-        <!--Othello-->
-        <div class="filterDiv Code">
-            <img src="othello.png" alt ="Othello" width=100% height =auto/>
-            <b>Othello</b>
-            <div>
-                <h1>Othello </h1>
-                <h2>Creator</h2>
-                <h2><i>Fall 2018</i></h2>
-                <p> I coded the game Othello in Java as the 
-                    final project to CSCI0150: Object-Oriented Programming.
-                    My Othello uses the Mini-max algorithm to have artifical 
-                    intelligence players with different levels of intelligence. </p>
-            </div>
+      </div>
+      <!--AirBnb-->
+      <div class="filterDiv Design">
+        <img src="airbnb.png" alt="Adobe X AirBnb" width="100%" height="auto" />
+        <b>AdobeXD + Airbnb UI/UX Design Challenge</b>
+        <div>
+          <h1>AdobeXD + AirBnb</h1>
+          <h2>Participant</h2>
+          <h2><i>Spring 2020</i></h2>
+          <p>
+            This is the second Adobe Creative Jam challenge I participated in
+            (after the Nickelodeon challenge). I joined two friends to prototype
+            an iPhone app for AirBnb for the post-COVID19 world. We created the
+            app Scrapbooking, with a much higher focus on user experience and
+            design. We learned a lot from the Nickelodeon challenge and created
+            a much more sophisticated prototype, becoming the top 25% of
+            participants!
+          </p>
+          <a
+            href="https://xd.adobe.com/view/56ea9bed-8220-4982-685b-c2b5c7f9367a-20db/"
+            target="_blank"
+          >
+            Play with our prototype!</a
+          >
         </div>
-        <!--Tetris-->
-        <div class="filterDiv Code">
-            <img src="tetris.png" alt ="Tetris" width=100% height =auto/>
-            <b>Tetris</b>
-            <div>
-                <h1>Tetris </h1>
-                <h2>Creator</h2>
-                <h2><i>Fall 2018</i></h2>
-                <p> I coded the game Tetris in Java as part of CSCI0150: Object-Oriented Programming.
-                    It was the first big project I coded and I learned about seeing a long project through from beginning to end.</p>
-            </div>
+      </div>
+      <!--Nickoledon-->
+      <div class="filterDiv Design">
+        <img
+          src="nickelodeon.png"
+          alt="Adobe X Nickelodeon"
+          width="100%"
+          height="auto"
+        />
+        <b>AdobeXD + Nickelodeon UI/UX Design Challenge</b>
+        <div>
+          <h1>AdobeXD + Nickelodeon</h1>
+          <h2>Participant</h2>
+          <h2><i> Spring 2020</i></h2>
+          <p>
+            I joined two friends to learn AdobeXD and prototype an iPad app
+            aimed at helping kids feel connected and safe during the COVID19
+            pandemic. Our app is called Communify. I learnd a lot about UI/UX
+            design, and how to use AdobeXD!
+          </p>
+          <a
+            href="https://xd.adobe.com/view/2f06327c-4cd1-408c-7c38-64d3b967668e-5937/"
+            target="_blank"
+          >
+            Play with our prototype!</a
+          >
         </div>
-        <!--Traditional Art-->
-        <div class="filterDiv Art">
-            <img src="tradart.png" alt ="Traditional Art Portfolio" width=100% height =auto/>
-            <b>Traditional Art Portfolio</b>
-            <div>
-                <h1>Traditional Art </h1>
-                <p> In my free time, I enjoy sketching and painting! Like my interests,
-                    my art tends to be pretty wide ranging. 
-                    Here are some samples of art I made in traditional mediums. 
-                </p>
-                <a href="https://drive.google.com/drive/folders/1yp0iGSIN0hprTDRrSAy_gY8cMezJney6?usp=sharing" target="_blank"> My Portfolio!</a> 
-
-            </div>
+      </div>
+      <!--BUO Social Media-->
+      <div class="filterDiv Leadership Design">
+        <img
+          src="buo.png"
+          alt="Brown University Orchestra"
+          width="100%"
+          height="auto"
+        />
+        <b>Brown University Orchestra - Publicity Manager</b>
+        <div>
+          <h1>Brown University Orchestra</h1>
+          <h2>Publicity Manager</h2>
+          <h2><i>Fall 2019 - Spring 2020</i></h2>
+          <p>
+            In 9 months, I was able to increase our Facebook and Instagram
+            following by ~700 (110%), and total post reach by 460%! Through this
+            opportunity, I got to try a lot of different things, such as using a
+            DSLR camera and professionally editing photos, Facebook/Instagram
+            Analytics, and creating/leading our 9 person social media team to
+            make over 60 posts! I also got to initiatate fun programs such as
+            the Orchestra Petting Zoo and Orchestra Families.
+          </p>
+          <a
+            href="https://www.facebook.com/BrownUniversityOrchestra/"
+            target="_blank"
+          >
+            BUO Facebook</a
+          >
+          <br />
+          <a
+            href="https://www.instagram.com/brownuniversityorchestra/"
+            target="_blank"
+          >
+            BUO Instagram</a
+          >
         </div>
-        <!--Digital Art-->
-        <div class="filterDiv Art Design">
-            <img src="digtart.png" alt ="Digital Art Portfolio" width=100% height =auto/>
-            <b>Digital Art Portfolio</b>
-            <div>
-                <h1>Digital Art Portfolio </h1>
-                <p> More recently, I'm using technology to help with my art. I
-                    have some knowledge of Photoshop, Procreate, Illustrator, 
-                    Aftereffects, InDesign and Premiere. This comes very useful 
-                    when I need last minute designs, so this portfolio also contains things I designed! </p>
-                <a href="https://drive.google.com/open?id=1nd5D5xSIjZY69yub2C-vhGYJay6ACV7n" target="_blank"> My Portfolio!</a> 
-
-            </div>
+      </div>
+      <!--Candide-->
+      <div class="filterDiv Art Leadership">
+        <img src="candide.png" alt="Candide" width="100%" height="auto" />
+        <b>Candide - Producer and Orchestral Music Director</b>
+        <div>
+          <h1>Candide</h1>
+          <h2>Producer and Orchestral Music Director</h2>
+          <h2><i>Spring 2020</i></h2>
+          <p>
+            I had the opportunity to produce Leonard Bernstein's
+            <i>Candide</i> with over 40 students through Brown Opera
+            Productions. <i>Candide</i> is one of my favorite operas of all
+            time, so I had the opporutnity to see the entire production through,
+            from forming a team (twice), to creating the budget, to learning
+            about copyright, to trying my best to teach the incredibly difficult
+            music as conductor, to finally managing the chaos that ensued due to
+            COVID-19.
+          </p>
+          <a href="https://brownoperaproductions.com/" target="_blank">
+            Brown Opera Productions</a
+          >
         </div>
-        <!--This Website :0-->
-        <div class="filterDiv Design Code">
-            <img src="bop.png" alt ="this website" width=100% height =auto/>
-            <b>This Website</b>
-            <div>
-                <h1>This Website </h1>
-                <h2>HTML/CSS/JavaScript/AdobeXD</h2>
-                <h2><i>Summer 2020 - Present</i></h2>
-                <p> I'm finally fulfilling my longtime goal of creating a website from scratch! 
-                    I prototyped this website on AdobeXD and learned HTML/CSS/JavaScript along the way.
-                    There's probably a lot of bugs and I'm planning on adding lots of more fun functionalities, so stay tuned!
-                    Also, the v in my web address stands for violas. I don't actually have a middle name. </p>
-                <a href="https://github.com/xinruviolas/xinruviolas.github.io" target="_blank"> Look at the code :o</a> 
-            </div>
+      </div>
+      <!--WE@Brown-->
+      <div class="filterDiv Leadership">
+        <img src="weatbrown.png" alt="WE@Brown" width="100%" height="auto" />
+        <b>WE@Brown 2020 - Lead Coordinator</b>
+        <div>
+          <h1>WE@Brown 2020 Conference</h1>
+          <h2>Lead Coordinator</h2>
+          <h2><i>Fall 2019 - Spring 2020</i></h2>
+          <p>
+            Led the Women Empowerment Team at Brown Entrepreneurship Program to
+            plan our spring conference celebrating and empowering women in
+            entrepreneurship. Together, we recruited over 20 speakers, recorded
+            over 300 registered attendees, and raised around $10,000 of in kind
+            sponsorships from partners such as Canva, Hint, and the Flex
+            Company. I learned a lot about leadership, event planning/crisis
+            management, and women in entrepreneurship!
+          </p>
+          <a
+            href="http://brownentrepreneurship.com/we-at-brown"
+            target="_blank"
+          >
+            Event Website</a
+          >
+          <br />
+          <a
+            href="https://entrepreneurship.brown.edu/2020/04/webrown-conference-2020-uplift/"
+            target="_blank"
+          >
+            Conference Recap</a
+          >
         </div>
-        
-
-
+      </div>
+      <!--COLT short film-->
+      <div class="filterDiv Art Design Code Leadership">
+        <img
+          src="coltfilm.png"
+          alt="metaphysical short film"
+          width="100%"
+          height="auto"
+        />
+        <b>Short Detective Film - Creator</b>
+        <div>
+          <h1>Short Detective Film</h1>
+          <h2>Creator</h2>
+          <h2><i>Spring 2020</i></h2>
+          <p>
+            This is a short film I made on Adobe Premiere and Adobe XD as the
+            final project for my Global Detective Fiction Class. It's a
+            metaphysical detective film filmed as though the viewer is seeing
+            the "narrator's" computer screen. I prototyped everything on Adobe
+            XD (over 100 artboards...) or the inspect tool and learned a
+            surprising amount of UI/UX design practices.
+          </p>
+          <p>Message me to see it!</p>
+        </div>
+      </div>
+      <!--Ragtime-->
+      <div class="filterDiv Art Leadership">
+        <img src="ragtime.png" alt="ragtime" width="100%" height="auto" />
+        <b>Ragtime - Orchestral Music Director</b>
+        <div>
+          <h1>Ragtime</h1>
+          <h2>Orchestral Music Director</h2>
+          <h2><i>Fall 2019</i></h2>
+          <p>
+            I conducted a pit orchestra for a production of the award winning
+            musical <i>Ragtime</i> with the student production group Musical
+            Forum at Brown University. It was my first time conducting a
+            production of this scale and I truly learned a lot!
+          </p>
+          <a
+            href="https://www.browntheatrecollective.com/ragtime"
+            target="_blank"
+            >learn more!</a
+          >
+        </div>
+      </div>
+      <!--Kennedy Center-->
+      <div class="filterDiv Code Leadership">
+        <img
+          src="kc.png"
+          alt="Kennedy Center for the Performing Arts"
+          width="100%"
+          height="auto"
+        />
+        <b>Kennedy Center - Performance Predicting Tool</b>
+        <div>
+          <h1>The John F. Kennedy Center for the Performing Arts</h1>
+          <h2>Data and Analysis Intern</h2>
+          <h2><i>Summer 2020</i></h2>
+          <p>
+            During my internship with John F. Kennedy Center for the Performing
+            Arts this summer, I had the opportunity to create a performance
+            attendance predicting tool on SSRS and Tableau to reduce Playbill
+            printing waste. It was really challenging, but fun, to learn SQL,
+            Tableau, and how predictive analysis works from scratch, but I got a
+            lot of support from my team. My tool has the potential to save
+            $20,000 of paper annually!
+          </p>
+          <a href="https://www.kennedy-center.org/" target="_blank">
+            Kennedy Center Website</a
+          >
+        </div>
+      </div>
+      <!--Rhythm Practice-->
+      <div class="filterDiv Code Leadership">
+        <img
+          src="rhythmpractice.png"
+          alt="Rhythm Practice"
+          width="100%"
+          height="auto"
+        />
+        <b>Hack@Brown Participant</b>
+        <div>
+          <h1>Rhythm Practice</h1>
+          <h2>Hack@Brown Participant</h2>
+          <h2><i>Spring 2019</i></h2>
+          <p>
+            I designed the musical algorithm and UI/UX layout for this iOS app I
+            developed with a team of 4 during Hack@Brown 2019. My team won the
+            First Time Hacker Award out of 500 students!
+          </p>
+          <a href="https://2019.hackatbrown.org/" target="_blank"
+            >Hack@Brown 2019</a
+          >
+        </div>
+      </div>
+      <!--Othello-->
+      <div class="filterDiv Code">
+        <img src="othello.png" alt="Othello" width="100%" height="auto" />
+        <b>Othello</b>
+        <div>
+          <h1>Othello</h1>
+          <h2>Creator</h2>
+          <h2><i>Fall 2018</i></h2>
+          <p>
+            I coded the game Othello in Java as the final project to CSCI0150:
+            Object-Oriented Programming. My Othello uses the Mini-max algorithm
+            to have artifical intelligence players with different levels of
+            intelligence.
+          </p>
+        </div>
+      </div>
+      <!--Tetris-->
+      <div class="filterDiv Code">
+        <img src="tetris.png" alt="Tetris" width="100%" height="auto" />
+        <b>Tetris</b>
+        <div>
+          <h1>Tetris</h1>
+          <h2>Creator</h2>
+          <h2><i>Fall 2018</i></h2>
+          <p>
+            I coded the game Tetris in Java as part of CSCI0150: Object-Oriented
+            Programming. It was the first big project I coded and I learned
+            about seeing a long project through from beginning to end.
+          </p>
+        </div>
+      </div>
+      <!--Traditional Art-->
+      <div class="filterDiv Art">
+        <img
+          src="tradart.png"
+          alt="Traditional Art Portfolio"
+          width="100%"
+          height="auto"
+        />
+        <b>Traditional Art Portfolio</b>
+        <div>
+          <h1>Traditional Art</h1>
+          <p>
+            In my free time, I enjoy sketching and painting! Like my interests,
+            my art tends to be pretty wide ranging. Here are some samples of art
+            I made in traditional mediums.
+          </p>
+          <a
+            href="https://drive.google.com/drive/folders/1yp0iGSIN0hprTDRrSAy_gY8cMezJney6?usp=sharing"
+            target="_blank"
+          >
+            My Portfolio!</a
+          >
+        </div>
+      </div>
+      <!--Digital Art-->
+      <div class="filterDiv Art Design">
+        <img
+          src="digtart.png"
+          alt="Digital Art Portfolio"
+          width="100%"
+          height="auto"
+        />
+        <b>Digital Art Portfolio</b>
+        <div>
+          <h1>Digital Art Portfolio</h1>
+          <p>
+            More recently, I'm using technology to help with my art. I have some
+            knowledge of Photoshop, Procreate, Illustrator, Aftereffects,
+            InDesign and Premiere. This comes very useful when I need last
+            minute designs, so this portfolio also contains things I designed!
+          </p>
+          <a
+            href="https://drive.google.com/open?id=1nd5D5xSIjZY69yub2C-vhGYJay6ACV7n"
+            target="_blank"
+          >
+            My Portfolio!</a
+          >
+        </div>
+      </div>
+      <!--This Website :0-->
+      <div class="filterDiv Design Code">
+        <img src="bop.png" alt="this website" width="100%" height="auto" />
+        <b>This Website</b>
+        <div>
+          <h1>This Website</h1>
+          <h2>HTML/CSS/JavaScript/AdobeXD</h2>
+          <h2><i>Summer 2020 - Present</i></h2>
+          <p>
+            I'm finally fulfilling my longtime goal of creating a website from
+            scratch! I prototyped this website on AdobeXD and learned
+            HTML/CSS/JavaScript along the way. There's probably a lot of bugs
+            and I'm planning on adding lots of more fun functionalities, so stay
+            tuned! Also, the v in my web address stands for violas. I don't
+            actually have a middle name.
+          </p>
+          <a
+            href="https://github.com/xinruviolas/xinruviolas.github.io"
+            target="_blank"
+          >
+            Look at the code :o</a
+          >
+        </div>
+      </div>
     </div>
-
 
     <!-- Footer -->
-    <div class = "footer">
-        <a href ="mailto:xinru_li@brown.edu" >Get in touch!</a>
-        <p>made with love by Xinru Li</p>
+    <div class="footer">
+      <a href="mailto:xinru_li@brown.edu">Get in touch!</a>
+      <p>made with love by Xinru Li</p>
     </div>
-
-
-
-
-
-
 
     <!--Javascript!-->
     <script>
-        filterSelection("all")
-        function filterSelection(c) {
-            var x, i;
-            x = document.getElementsByClassName("filterDiv");
-            if (c == "all") c = "";
-            // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
-            for (i = 0; i < x.length; i++) {
-            w3RemoveClass(x[i], "show");
-            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-            }
+      /*preloader*/
+      (function ($) {
+        "use strict";
+        $(window).on("load", function () {
+          if ($(".pre-loader").length > 0) {
+            $(".pre-loader").fadeOut("slow");
+          }
+        });
+      })(jQuery);
+      
+      /* for filters */
+      filterSelection("all");
+      function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("filterDiv");
+        if (c == "all") c = "";
+        // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+        for (i = 0; i < x.length; i++) {
+          w3RemoveClass(x[i], "show");
+          if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
         }
+      }
 
-        // Show filtered elements
-        function w3AddClass(element, name) {
-            var i, arr1, arr2;
-            arr1 = element.className.split(" ");
-            arr2 = name.split(" ");
-            for (i = 0; i < arr2.length; i++) {
-                if (arr1.indexOf(arr2[i]) == -1) {
-                element.className += " " + arr2[i];
-                }
-            }
+      // Show filtered elements
+      function w3AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          if (arr1.indexOf(arr2[i]) == -1) {
+            element.className += " " + arr2[i];
+          }
         }
+      }
 
-        // Hide elements that are not selected
-        function w3RemoveClass(element, name) {
-            var i, arr1, arr2;
-            arr1 = element.className.split(" ");
-            arr2 = name.split(" ");
-            for (i = 0; i < arr2.length; i++) {
-                while (arr1.indexOf(arr2[i]) > -1) {
-                arr1.splice(arr1.indexOf(arr2[i]), 1);
-                }
-            }
-            element.className = arr1.join(" ");
+      // Hide elements that are not selected
+      function w3RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);
+          }
         }
-        // Add active class to the current control button (highlight it)
-        var btnContainer = document.getElementById("myBtnContainer");
-        var btns = btnContainer.getElementsByClassName("btn");
-        for (var i = 0; i < btns.length; i++) {
-            btns[i].addEventListener("click", function() {
-                var current = document.getElementsByClassName("active");
-                current[0].className = current[0].className.replace(" active", "");
-                this.className += " active";
-            });
-        }
+        element.className = arr1.join(" ");
+      }
+      // Add active class to the current control button (highlight it)
+      var btnContainer = document.getElementById("myBtnContainer");
+      var btns = btnContainer.getElementsByClassName("btn");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
     </script>
   </body>
 </html>
