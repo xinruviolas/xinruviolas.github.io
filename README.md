@@ -1,5 +1,5 @@
 # Getting Started with Create React App
-
+Following instructions from https://dev.to/ionabrabender/creating-a-portfolio-website-using-github-pages-and-react-part-3-54gl 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
