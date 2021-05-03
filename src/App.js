@@ -1,17 +1,25 @@
 import logo from './images/logo.png';
 import './App.css';
 import MyNavbar from "./MyNavbar";
-import ProgressBar from "react-scroll-progress-bar";
+// import ProgressBar from "react-scroll-progress-bar";
+import ProgressBar from 'react-progressbar-on-scroll'
+import Portfolio from "./pages/Portfolio";
 
 function App() {
 
   return (
     <div className="App">
-        <ProgressBar bgcolor="#8BD4C0" style={{position: "relative"}}/>
-
+        {/*<ProgressBar bgcolor="#8BD4C0" style={{position: "relative"}}/>*/}
+        <ProgressBar color="#8BD4C0" position="top" height ={6}/>
         <div className="header">
             <MyNavbar/>
         </div>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <Portfolio/>
         <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>

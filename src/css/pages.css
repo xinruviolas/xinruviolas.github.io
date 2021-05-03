@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;800&display=swap");
+.heading {
+    font-family: "Open Sans", sans-serif;
+    font-weight:800;
+    font-size:40px;
+    text-align: left;
+    justify-content:center;
+    align-items:center;
+    color: #434343;
+}
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap");
+.intro {
+    font-family: "Open Sans", sans-serif;
+    font-size:20px;
+    font-weight:600;
+    text-align: left;
+    color: #434343;
+}
