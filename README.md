@@ -1,6 +1,7 @@
 # Getting Started with Create React App
 Following instructions from https://dev.to/ionabrabender/creating-a-portfolio-website-using-github-pages-and-react-part-3-54gl 
 main branch
+npm run build
 npm run deploy
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
