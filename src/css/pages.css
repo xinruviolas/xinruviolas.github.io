@@ -1,18 +1,75 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;800&display=swap");
 .heading {
     font-family: "Open Sans", sans-serif;
-    font-weight:800;
-    font-size:40px;
+    font-weight:700;
+    font-size:35px;
     text-align: left;
-    justify-content:center;
-    align-items:center;
+    /*justify-content:center;*/
+    /*align-items:center;*/
     color: #434343;
 }
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap");
 .intro {
+    /* min-height: 100vh; */
+    padding: 0 0.5rem;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+}
+
+.projects {
+    /*background-color: orange;*/
+    /*padding: 0 0.5rem;*/
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap");
+.introwords {
     font-family: "Open Sans", sans-serif;
     font-size:20px;
     font-weight:600;
     text-align: left;
     color: #434343;
+    padding: 0 0.5rem;
+}
+.photo {
+    width: 33%;
+    margin-left: 2%;
+}
+.filter{
+    width: 50%;
+    right: 10%;
+    /*margin-left: 2%;*/
+    text-align: right;
+    padding: 0 1rem;
+    font-family: "Open Sans", sans-serif;
+    font-size:20px;
+    font-weight:600;
+    color: #434343;
+    /*sticky things*/
+    position: sticky;
+    position: -webkit-sticky;
+    /*background: #f83d23;*/
+    top: 170px;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    }
+
+.filter ul {
+    list-style: none;
+    /*direction: rtl;*/
+    /*list-style-position: outside;*/
+}
+@media (max-width: 700px) {
+    .intro {
+        flex-direction: column;
+        width: 90% !important;
+    }
+    .photo {
+        width: 80% !important;
+        margin-left: 10%;
+        /*display: none;*/
+    }
 }

@@ -8,6 +8,7 @@
     font-family: "Open Sans", sans-serif;
     font-weight:600;
     transition: 0.3s;
+    color: #434343;
 }
 #text:hover {
     color: #8BD4C0;

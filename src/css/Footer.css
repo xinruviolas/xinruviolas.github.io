@@ -1,0 +1,61 @@
+.horizontal {
+    display: inline;
+    margin: 8px;
+    font-size: 18px;
+    color: #434343;
+    /* margin-top: 0px; */
+}
+.icons{
+    display: inline;
+    color: #434343;
+    transition: 0.3s;
+}
+.noHighlight {
+    color: #434343;
+    transition: 0.3s;
+}
+
+.icons:hover {
+    /*background-color: white;*/
+    color: #8BD4C0;
+}
+
+.horizontal:hover {
+    cursor: pointer;
+}
+
+.list {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+.footer {
+    position: center;
+    bottom: 0;
+    /* width: 100%; */
+    height: 2.5rem;
+    margin-bottom: 4%;
+    margin-left: 4%;
+}
+.jack {
+    width: 15%;
+    height: 15%;
+    text-align: right;
+}
+
+@media (max-width: 480px) {
+    .footer {
+        margin-bottom: 3rem;
+    }
+    .footerText {
+        font-size: 14px;
+    }
+}
+
+.footerText {
+    margin-left: 0.5%;
+    font-style: italic;
+    width: 100%;
+}

@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;800&display=swap");
+.cardTitle{
+    font-family: "Open Sans", sans-serif;
+    font-weight:600;
+    font-size:25px;
+    text-align: left;
+    /*justify-content:center;*/
+    /*align-items:center;*/
+    color: #434343;
+    margin-bottom: 0rem;
+}
+.cardText {
+    text-align: left;
+}
+.badge-software{
+    background-color: #EEA09F;
+    color: white;
+}
+.badge-engineering {
+    background-color: #FFD29D;
+    color: white;
+}
+.badge-product {
+    background-color: #FFF999;
+    color: gray;
+}
+.badge-design {
+    background-color: #A9F292;
+    color: white;
+}
+.badge-dei {
+    background-color: #8DD0F3;
+    color: white;
+}
+.badge-music {
+    background-color: #AC9AF6;
+    color: white;
+}
+.card{
+    border-radius: 20px;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    /*padding: 14px 80px 18px 36px;*/
+    /*cursor: pointer;*/
+    margin-bottom: 5rem;
+}
+
+.stretched-link{
+    /*display: none;*/
+}
+.card:hover{
+    transform: scale(1.01);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.card-deck{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    /*margin-right: 3rem;*/
+    position: relative;
+    left: 15%;
+    /*background-color: green;*/
+}

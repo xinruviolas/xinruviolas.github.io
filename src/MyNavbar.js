@@ -2,6 +2,7 @@ import { Navbar, Nav} from 'react-bootstrap';
 import logo from "./images/logo.png";
 import "./css/MyNavbar.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import resume from "./Xinru_Li.pdf"
 
 
 function MyNavbar(props) {
@@ -18,7 +19,7 @@ function MyNavbar(props) {
                     <Nav className="ml-auto">
                         <Nav.Link href="/" id = "text">Projects</Nav.Link>
                         <Nav.Link href="/" id = "text">About</Nav.Link>
-                        <Nav.Link href="/" id = "text">Resume</Nav.Link>
+                        <Nav.Link href={resume} id = "text" target="_blank">Resume</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

@@ -1,9 +1,9 @@
 import logo from './images/logo.png';
 import './App.css';
 import MyNavbar from "./MyNavbar";
-// import ProgressBar from "react-scroll-progress-bar";
 import ProgressBar from 'react-progressbar-on-scroll'
 import Portfolio from "./pages/Portfolio";
+import Footer from "./Footer";
 
 function App() {
 
@@ -20,25 +20,20 @@ function App() {
         <br/>
         <br/>
         <Portfolio/>
-        <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          website under construction, come back later!
-        </p>
-          <img src={logo} className="App-logo" alt="logo" />
-          <img src={logo} className="App-logo" alt="logo" />
-          <img src={logo} className="App-logo" alt="logo" />
-          <img src={logo} className="App-logo" alt="logo" />
-
-          {/*<a*/}
-        {/*  className="App-link"*/}
-        {/*  href="https://reactjs.org"*/}
-        {/*  target="_blank"*/}
-        {/*  rel="noopener noreferrer"*/}
-        {/*>*/}
-        {/*  Learn React*/}
-        {/*</a>*/}
-      </header>
+        <br/>
+        <br/>
+        <br/>
+      {/*  <header className="App-header">*/}
+      {/*    /!*<a*!/*/}
+      {/*  /!*  className="App-link"*!/*/}
+      {/*  /!*  href="https://reactjs.org"*!/*/}
+      {/*  /!*  target="_blank"*!/*/}
+      {/*  /!*  rel="noopener noreferrer"*!/*/}
+      {/*  /!*>*!/*/}
+      {/*  /!*  Learn React*!/*/}
+      {/*  /!*</a>*!/*/}
+      {/*</header>*/}
+        <Footer/>
     </div>
   );
 }
