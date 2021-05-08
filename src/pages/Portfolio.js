@@ -5,6 +5,9 @@ import portrait from "../images/dummyportrait.png"
 import Project from "../Project";
 
 function Portfolio() {
+    function filterSelection(selection) {
+        console.log(selection);
+    }
     return (
         <div>
             <div className={"intro"}>
@@ -28,7 +31,8 @@ function Portfolio() {
                         />
                     </div>
                     <br/>
-                    I'm still building out my website,
+                    I'm a senior at <a href="https://brown.edu/" target="_blank" class={"pagelink"}> Brown University</a> studying
+                    Music and Computer Science. I'm still building out my website,
                     and I'm excited to show you once I'm done! In the meantime, I can
                     be reached at xinru_li@brown.edu :D
                     {/*I believe in intersectional innovation, trying new things,*/}
@@ -41,7 +45,7 @@ function Portfolio() {
                 <div className={"filter"}>
                     <text className={"heading"}>My Projects!</text>
                     <ul>
-                        <li>All</li>
+                        <li class="btn active" onClick={filterSelection('all')} >All</li>
                         <li>Software</li>
                         <li>Engineering</li>
                         <li>Product</li>

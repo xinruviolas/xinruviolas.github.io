@@ -25,6 +25,30 @@
     align-items: start;
 }
 
+:root {
+    --mainColor: #8BD4C0;
+}
+
+.pagelink {
+        background:
+                linear-gradient(
+                        to bottom, var(--mainColor) 0%,
+                        var(--mainColor) 100%
+                );
+        background-position: 0 100%;
+        background-repeat: repeat-x;
+        background-size: 4px 4px;
+        color: #434343;
+        text-decoration: none;
+        transition: background-size .4s;
+}
+
+.pagelink:hover {
+    background-size: 2px 15px;
+    color: #434343;
+    text-decoration: none;
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap");
 .introwords {
     font-family: "Open Sans", sans-serif;
