@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.2ce90034.chunk.css",
-    "main.js": "/static/js/main.1f954f0b.chunk.js",
-    "main.js.map": "/static/js/main.1f954f0b.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.2b4008e7.js",
-    "runtime-main.js.map": "/static/js/runtime-main.2b4008e7.js.map",
+    "main.css": "/static/css/main.37794439.chunk.css",
+    "main.js": "/static/js/main.aacc258a.chunk.js",
+    "main.js.map": "/static/js/main.aacc258a.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.bc40dd4e.js",
+    "runtime-main.js.map": "/static/js/runtime-main.bc40dd4e.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.f4fcf1bb.chunk.js": "/static/js/2.f4fcf1bb.chunk.js",
-    "static/js/2.f4fcf1bb.chunk.js.map": "/static/js/2.f4fcf1bb.chunk.js.map",
-    "static/js/3.999cc93c.chunk.js": "/static/js/3.999cc93c.chunk.js",
-    "static/js/3.999cc93c.chunk.js.map": "/static/js/3.999cc93c.chunk.js.map",
+    "static/js/2.4273c6a8.chunk.js": "/static/js/2.4273c6a8.chunk.js",
+    "static/js/2.4273c6a8.chunk.js.map": "/static/js/2.4273c6a8.chunk.js.map",
+    "static/js/3.1e26ea68.chunk.js": "/static/js/3.1e26ea68.chunk.js",
+    "static/js/3.1e26ea68.chunk.js.map": "/static/js/3.1e26ea68.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.4c97ca4f.chunk.css.map": "/static/css/2.4c97ca4f.chunk.css.map",
-    "static/css/main.2ce90034.chunk.css.map": "/static/css/main.2ce90034.chunk.css.map",
-    "static/js/2.f4fcf1bb.chunk.js.LICENSE.txt": "/static/js/2.f4fcf1bb.chunk.js.LICENSE.txt",
+    "static/css/main.37794439.chunk.css.map": "/static/css/main.37794439.chunk.css.map",
+    "static/js/2.4273c6a8.chunk.js.LICENSE.txt": "/static/js/2.4273c6a8.chunk.js.LICENSE.txt",
     "static/media/Xinru_Li.7b1189b3.pdf": "/static/media/Xinru_Li.7b1189b3.pdf",
     "static/media/dummyportrait.dc52c38a.png": "/static/media/dummyportrait.dc52c38a.png",
     "static/media/dummyproject.a90c6dd8.jpg": "/static/media/dummyproject.a90c6dd8.jpg",
     "static/media/logo.d61bbe19.png": "/static/media/logo.d61bbe19.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.2b4008e7.js",
+    "static/js/runtime-main.bc40dd4e.js",
     "static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.f4fcf1bb.chunk.js",
-    "static/css/main.2ce90034.chunk.css",
-    "static/js/main.1f954f0b.chunk.js"
+    "static/js/2.4273c6a8.chunk.js",
+    "static/css/main.37794439.chunk.css",
+    "static/js/main.aacc258a.chunk.js"
   ]
 }
