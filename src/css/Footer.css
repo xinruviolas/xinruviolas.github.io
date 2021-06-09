@@ -22,6 +22,7 @@
 
 .horizontal:hover {
     cursor: pointer;
+    text-decoration: none;
 }
 
 .list {
@@ -29,6 +30,12 @@
     margin-bottom: 2px;
     margin-left: 0px;
     padding-left: 0px;
+}
+.list:hover {
+    text-decoration: none;
+}
+p:hover {
+    text-decoration: none;
 }
 
 .footer {
@@ -38,6 +45,7 @@
     height: 2.5rem;
     margin-bottom: 4%;
     margin-left: 4%;
+    text-decoration: none;
 }
 .jack {
     width: 15%;
@@ -58,4 +66,7 @@
     margin-left: 0.5%;
     font-style: italic;
     width: 100%;
+}
+.logos:hover {
+    text-decoration: none;
 }

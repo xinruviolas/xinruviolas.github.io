@@ -39,6 +39,9 @@ const iconMap = {
 function Footer() {
     return (
         <footer className={"footer"}>
+        <br/>
+        <br/>
+        <br/>
             <ul className={"list"}>
                 {links.map((e, i) => {
                     const currIcon = iconMap[e.type];
@@ -47,6 +50,7 @@ function Footer() {
                             <a
                                 href={e.link}
                                 target="_blank"
+                                className={"logos"}
                             >
                                 {currIcon}
                             </a>
@@ -57,6 +61,7 @@ function Footer() {
             <div className={"footertext"}>
                 © {date.getFullYear()} made with ❤️ (and a vast amount of sugar) by Xinru Li
             </div>
+            <br/>
         </footer>
     );
 }

@@ -10,6 +10,11 @@ function Portfolio() {
     }
     return (
         <div>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
             <div className={"intro"}>
                 <img src={portrait} alt="photo of me" className = {"photo"}/>
                 <div className = {"introwords"}>

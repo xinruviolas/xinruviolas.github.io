@@ -13,28 +13,34 @@
     text-align: left;
 }
 .badge-software{
-    background-color: #EEA09F;
-    color: white;
+    background-color: white;
+    border: 2px solid #EEA09F;
+    color: #EEA09F;
 }
 .badge-engineering {
-    background-color: #FFD29D;
-    color: white;
+    background-color: white;
+    border: 2px solid #edb271;
+    color: #edb271;
 }
 .badge-product {
-    background-color: #FFF999;
-    color: gray;
+    background-color: white;
+    border: 2px solid #ecdc67;
+    color: #ecdc67;
 }
 .badge-design {
-    background-color: #A9F292;
-    color: white;
+    background-color: white;
+    border: 2px solid #87d872;
+    color: #87d872;
 }
 .badge-dei {
-    background-color: #8DD0F3;
-    color: white;
+    background-color: white;
+    border: 2px solid #8DD0F3;
+    color: #8DD0F3;
 }
 .badge-music {
-    background-color: #AC9AF6;
-    color: white;
+    background-color: white;
+    border: 2px solid #AC9AF6;
+    color: #AC9AF6;
 }
 .card{
     border-radius: 20px;
