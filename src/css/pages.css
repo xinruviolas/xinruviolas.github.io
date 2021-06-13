@@ -97,3 +97,6 @@
         /*display: none;*/
     }
 }
+.bullet {
+    text-decoration: none;
+}

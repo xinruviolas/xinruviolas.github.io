@@ -44,7 +44,11 @@ function Portfolio() {
                     teaching a <a href="http://cs.brown.edu/courses/cs016/"target="_blank" className={"pagelink"}>CS
                     intro course</a> at <a href="https://www.brown.edu/"target="_blank" className={"pagelink"}>Brown University</a>,
                     thinking through literacy and educational equity with <a href="https://www.teachingbuddies.org/"target="_blank" className={"pagelink"}>
-                    Teaching Buddies </a>, and trying to become a plant mom!
+                    Teaching Buddies </a>, and trying to become a plant mom! Some fun facts about me:
+                    <br/><br/>
+                    <u className={"bullet"}>
+                        <li>In Chinese, my name is 心如, which is short for 心事如意. </li>
+                    </u>
 
                 </div>
             </div>
