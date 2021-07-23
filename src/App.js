@@ -9,7 +9,7 @@ import React from "react";
 import { withRouter } from "react-router";
 
 import {
-    HashRouter,
+    // HashRouter as Router,
     BrowserRouter as Router,
     Switch,
     Route,
@@ -20,7 +20,7 @@ import resume from "./Xinru_Li.pdf"
 function App() {
     const HeaderWithRouter = withRouter(MyNavbar);
   return (
-      <HashRouter basename='/'>
+      // <HashRouter basename='/'>
       <Router>
           <div>
               <ProgressBar color="#8BD4C0" position="top" height ={6}/>
@@ -43,7 +43,7 @@ function App() {
           <Footer/>
           </div>
         </Router>
-      </HashRouter>
+      // </HashRouter>
 
   );
 }
