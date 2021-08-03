@@ -24,7 +24,7 @@ function MyNavbar(props) {
                             <Nav.Link href="/" id = "text" class={"pagelink"}>Projects</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link href="/about" id = "text">About</Nav.Link>
+                            <Nav.Link href={process.env.PUBLIC_URL+"/about"} id = "text">About</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
                             <Nav.Link href={resume} id = "text" target="_blank">Resume</Nav.Link>
