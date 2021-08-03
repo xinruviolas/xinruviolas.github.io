@@ -31,12 +31,12 @@ function App() {
               {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
               <Switch>
-                  <Route path="/about">
-                      <About />
-                  </Route>
-                  <Route path="/">
-                      <Portfolio />
-                  </Route>
+                  <Route path="/about" component={About}/>
+                  {/*    <About />*/}
+                  {/*</Route>*/}
+                  <Route path="/" component = {Portfolio}/>
+                  {/*    <Portfolio />*/}
+                  {/*</Route>*/}
               </Switch>
           </div>
           <div className = "App">
