@@ -47,7 +47,11 @@ function Portfolio() {
                     Teaching Buddies </a>, and trying to become a plant mom! Some fun facts about me:
                     <br/><br/>
                     <u className={"bullet"}>
-                        <li>In Chinese, my name is 心如, which is short for 心事如意. </li>
+                        <li>In Chinese, my name is 心如, which is short for 心事如意. It doeesn't translate
+                        super well into English, literally, it means "lucky heart" but I promise it's really cool in Chinese :D</li>
+                        <li> I went to 5 schools in 5 years!</li>
+                        <li> Violas are the best instrument. Yes I am a violist. Why do you ask?</li>
+
                     </u>
 
                 </div>
