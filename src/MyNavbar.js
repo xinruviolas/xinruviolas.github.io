@@ -4,7 +4,7 @@ import "./css/MyNavbar.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import resume from "./Xinru_Li.pdf"
 import './css/pages.css';
-import { NavLink } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 
 
@@ -24,7 +24,8 @@ function MyNavbar(props) {
                             <Nav.Link href="/" id = "text" class={"pagelink"}>Projects</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link href={process.env.PUBLIC_URL+"/about"} id = "text">About</Nav.Link>
+                            <Link to={process.env.PUBLIC_URL+"/about"} id = "text">About</Link>
+                            {/*<Nav.Link href={process.env.PUBLIC_URL+"/about"} id = "text">About</Nav.Link>*/}
                         </Nav.Item>
                         <Nav.Item>
                             <Nav.Link href={resume} id = "text" target="_blank">Resume</Nav.Link>
