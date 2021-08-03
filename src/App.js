@@ -21,7 +21,7 @@ function App() {
     const HeaderWithRouter = withRouter(MyNavbar);
   return (
       // <HashRouter basename='/'>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
           <div>
               <ProgressBar color="#8BD4C0" position="top" height ={6}/>
                    <div className="header">
