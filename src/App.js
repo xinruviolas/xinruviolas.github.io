@@ -20,31 +20,21 @@ import resume from "./Xinru_Li.pdf"
 function App() {
     const HeaderWithRouter = withRouter(MyNavbar);
   return (
-      // <HashRouter basename='/'>
       <Router basename={process.env.PUBLIC_URL}>
           <div>
               <ProgressBar color="#8BD4C0" position="top" height ={6}/>
                    <div className="header">
                        <HeaderWithRouter/>
-                       {/*<MyNavbar/>*/}
                    </div>
-              {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
               <Switch>
                   <Route path={process.env.PUBLIC_URL+"/about"} component={About}/>
-                  {/*    <About />*/}
-                  {/*</Route>*/}
                   <Route path="/" component = {Portfolio}/>
-                  {/*    <Portfolio />*/}
-                  {/*</Route>*/}
               </Switch>
           </div>
           <div className = "App">
           <Footer/>
           </div>
         </Router>
-      // </HashRouter>
-
   );
 }
 
