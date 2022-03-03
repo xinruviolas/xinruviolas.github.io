@@ -37,7 +37,7 @@ function Portfolio() {
                     </div>
                     <br/>
                     I'm a senior at <a href="https://brown.edu/" target="_blank" class={"pagelink"}> Brown University</a> studying
-                    Music and Computer Science. I'm still building out my website,
+                    Music and Computer Science. Check out my thesis <a href="https://xinruli.com/thesis/" target="_blank" class={"pagelink"}> here </a> I'm still building out my website,
                     and I'm excited to show you once I'm done! In the meantime, I can
                     be reached at xinru_li@brown.edu, and you can learn a bit more about my coding projects <a href="https://youtu.be/K6MMCBSUCvg" target="_blank" className={"pagelink"}>here! ❤️ </a>
                     {/*and you can learn a bit more about me on the <a href="/about" target="_blank" class={"pagelink"}>*/}
